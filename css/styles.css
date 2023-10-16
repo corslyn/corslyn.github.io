@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: 'Ubuntu Mono', serif;
+    font-family: 'Ubuntu Mono', sans-serif;
     font-size: 13px;
     text-shadow: 4px 4px 4px #F94C10;
     background-color: #F94C10;
@@ -16,6 +16,7 @@ h1 {
     color: #F8DE22;
     background-color: #C70039;
     text-align: center;
+    font-style: italic;
 }
 
 hr {
@@ -25,7 +26,24 @@ hr {
     border: none;
 }
 
-#menu {
-    list-style-type: none;
+nav ul {
+    overflow: hidden;
+    background-color: #C70039;
 }
 
+nav li {
+    list-style-type: none;
+    float: left;
+
+}
+
+nav li a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #F8DE22;
+}
+
+nav li a:hover {
+    background-color: black;
+}
