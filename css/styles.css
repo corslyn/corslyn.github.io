@@ -17,10 +17,10 @@ h1 {
     background-color: #C70039;
     text-align: center;
     font-style: italic;
+    margin: 20px;
 }
 
 hr {
-
     height: 10px;
     background-color: #C70039;
     border: none;
@@ -46,4 +46,10 @@ nav li a {
 
 nav li a:hover {
     background-color: black;
+}
+
+article {
+    background-color: #C70039;
+    text-align: center;
+    margin: 20px;
 }
