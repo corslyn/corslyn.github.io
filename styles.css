@@ -1,0 +1,42 @@
+body {
+    font-family: 'Ubuntu Mono', serif;
+    font-size: 13px;
+    text-shadow: 4px 4px 4px #F94C10;
+    background-color: #F94C10;
+
+}
+
+h1 {
+    font-size: 70px;
+    color: #F8DE22;
+    background-color: #C70039;
+    text-align: center;
+}
+
+hr {
+
+    height: 10px;
+    background-color: #C70039;
+    border: none;
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #C70039;
+}
+
+li.navbar {
+    float: left;
+}
+
+li.navbar a {
+    display: block;
+    color: #F8DE22;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 300%;
+}
