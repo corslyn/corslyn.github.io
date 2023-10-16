@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Ubuntu Mono";
+    src: url("/webfonts/UbuntuMono-Regular.ttf");
+}
+
 body {
     font-family: 'Ubuntu Mono', serif;
     font-size: 13px;
@@ -20,28 +25,7 @@ hr {
     border: none;
 }
 
-ul.navbar {
+#menu {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #C70039;
 }
 
-li.navbar {
-    float: left;
-}
-
-li.navbar a {
-    display: block;
-    color: #F8DE22;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 300%;
-}
-
-@font-face {
-    font-family: "Ubuntu Mono";
-    src: url("/webfonts/UbuntuMono-Regular.ttf");
-}
