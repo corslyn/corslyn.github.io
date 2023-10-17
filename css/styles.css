@@ -1,55 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Saira:700');
+
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+
 @font-face {
     font-family: "Ubuntu Mono";
     src: url("/webfonts/UbuntuMono-Regular.ttf");
 }
 
-body {
-    font-family: 'Ubuntu Mono', sans-serif;
-    font-size: 13px;
-    text-shadow: 4px 4px 4px #F94C10;
-    background-color: #F94C10;
+.video-wrapper {
+    /* Telling our absolute positioned video to
+    be relative to this element */
+    position: absolute;
+    bottom: 0;
+    left: 0;
 
+
+
+    /* Will not allow the video to overflow the
+    container */
+    overflow: hidden;
+
+    /* Centering the container's content vertically
+    and horizontally */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
-    font-size: 70px;
-    color: #F8DE22;
-    background-color: #C70039;
-    text-align: center;
-    font-style: italic;
-    margin: 20px;
-}
-
-hr {
-    height: 10px;
-    background-color: #C70039;
-    border: none;
-}
-
-nav ul {
-    overflow: hidden;
-    background-color: #C70039;
-}
-
-nav li {
-    list-style-type: none;
-    float: left;
-
-}
-
-nav li a {
-    display: block;
-    padding: 14px 16px;
-    text-decoration: none;
-    color: #F8DE22;
-}
-
-nav li a:hover {
-    background-color: black;
-}
-
-article {
-    background-color: #C70039;
-    text-align: center;
-    margin: 20px;
+    font-family: ;
 }
