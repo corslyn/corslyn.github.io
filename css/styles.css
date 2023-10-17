@@ -19,20 +19,23 @@
     src: url("/webfonts/Streamster.ttf");
 }
 
-
-
 .background {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    text-align: center;
-    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 
-    background-attachment: scroll;
+    text-align: center;
+
+
+    background-attachment: fixed;
     z-index: -1;
     object-fit: contain;
+    width: 100%;
+    height: auto;
 }
+
+
 
 h1 {
     text-shadow: -.0625rem -.0625rem 0 #6BFFFF, .0625rem .0625rem 0 #FF819E;
@@ -46,18 +49,27 @@ h2 {
     text-shadow: -.0625rem -.0625rem 0 #6BFFFF, .0625rem .0625rem 0 #FF819E;
     color: white;
     text-align: center;
-    rotate: -4deg;
+    transform: rotate(-4deg);
     position: relative;
     bottom: 100px;
     font-size: 100px;
     font-family: "VCR", sans-serif;
 }
 
+h3 {
+    text-shadow: -.0625rem -.0625rem 0 #6BFFFF, .0625rem .0625rem 0 #FF819E;
+    color: white;
+    text-align: center;
+    position: relative;
+
+    font-size: 40px;
+    font-family: "VCR", sans-serif;
+}
 
 
 nav {
     text-align: center;
-    font-family: "VCR";
+    font-family: "VCR", sans-serif;
     font-size: 40px;
 
 
@@ -70,18 +82,15 @@ nav ul {
 }
 
 nav li a {
-    text-decoration: none;
+
     color: black;
 
 
 }
 
-button:focus{
-    outline:none;
-}
 
-.box {
-    width: 300px;
+.boxmain {
+    width: 350px;
     background: #C0C0C0;
     border-width: 1px;
     border-color: #FFFFFF #808080 #808080 #FFFFFF;
@@ -91,6 +100,22 @@ button:focus{
     left: 50%;
     transform: translate(-50%,-50%);
     padding: 1px;
+}
+
+.box {
+    width: 350px;
+    background: #C0C0C0;
+    border-width: 1px;
+    border-color: #FFFFFF #808080 #808080 #FFFFFF;
+    border-style: solid;
+
+
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 1px;
+    position: absolute;
+    top: 20%
+
 }
 
 div.title{
@@ -118,7 +143,7 @@ div.body{
 }
 
 div.body p{
-    font-family:"MS Sans Serif";
+    font-family:"MS Sans Serif", sans-serif;
     font-size:11px;
 }
 
@@ -131,20 +156,25 @@ div.body p{
     margin:2px 2px 2px 0;
     float:right;
     width:14px;
-    height:13.5px;
+    height:14px;
     background:#C0C0C0;
     border-width:1px;
     border-color:#FFFFFF #808080 #808080 #FFFFFF;
     padding:0;
     font-size:9px;
     font-weight:bold;
-    font-family:Tahoma;
+    font-family:Tahoma, sans-serif;
     text-align:center;
-    focus:none;
+
 }
 
+button:focus{
+    outline:none;
+}
+
+
 div.body button{
-    font-family:"MS Sans Serif";
+    font-family:"MS Sans Serif", sans-serif;
     font-size:11px;
     outline:1px solid #000000;
     background:#C0C0C0;
@@ -155,6 +185,6 @@ div.body button{
     margin:20px auto 3px;
     display:block;
     position:relative;
-    bottom:0px;
+    bottom:0;
 }
 
