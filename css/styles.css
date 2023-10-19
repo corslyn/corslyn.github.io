@@ -76,37 +76,9 @@ nav ul {
 
 nav li a {
     color: black;
-<<<<<<< HEAD
-=======
+
 }
 
-.boxmain {
-    width: 350px;
-    background: #C0C0C0;
-    border-width: 1px;
-    border-color: #FFFFFF #808080 #808080 #FFFFFF;
-    border-style: solid;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    padding: 1px;
-}
-
-.box {
-    width: 350px;
-    background: #C0C0C0;
-    border-width: 1px;
-    border-color: #FFFFFF #808080 #808080 #FFFFFF;
-    border-style: solid;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    padding: 1px;
-    position: absolute;
-    top: 20%
-
->>>>>>> origin/main
-}
 
 div.title{
     height:18px;
@@ -170,14 +142,14 @@ div.body button{
     display:block;
     position:relative;
     bottom:0;
-<<<<<<< HEAD
+
 }
 
 .nav {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh; /* Adjust the height based on your requirements */
+    justify-content: flex-start; /* Center horizontally */
+    /* Center vertically */
+   /* Adjust the height based on your requirements */
 }
 
 .box {
@@ -191,8 +163,14 @@ div.body button{
 .indexnav {
     display: flex;
     justify-content: center; /* Center horizontally */
-     /* Center vertically */
+    align-items: center;/* Center vertically */
     border-color: #FFFFFF #808080 #808080 #FFFFFF;
-=======
->>>>>>> origin/main
+    margin-top: 200px;
+}
+
+.indexbox {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;/* Center vertically */
+    border-color: #FFFFFF #808080 #808080 #FFFFFF;
 }
