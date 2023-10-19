@@ -160,6 +160,6 @@ div.body button{
 .indexnav {
     display: flex;
     justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+     /* Center vertically */
     border-color: #FFFFFF #808080 #808080 #FFFFFF;
 }
