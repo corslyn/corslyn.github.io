@@ -76,6 +76,36 @@ nav ul {
 
 nav li a {
     color: black;
+<<<<<<< HEAD
+=======
+}
+
+.boxmain {
+    width: 350px;
+    background: #C0C0C0;
+    border-width: 1px;
+    border-color: #FFFFFF #808080 #808080 #FFFFFF;
+    border-style: solid;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 1px;
+}
+
+.box {
+    width: 350px;
+    background: #C0C0C0;
+    border-width: 1px;
+    border-color: #FFFFFF #808080 #808080 #FFFFFF;
+    border-style: solid;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 1px;
+    position: absolute;
+    top: 20%
+
+>>>>>>> origin/main
 }
 
 div.title{
@@ -140,6 +170,7 @@ div.body button{
     display:block;
     position:relative;
     bottom:0;
+<<<<<<< HEAD
 }
 
 .nav {
@@ -162,4 +193,6 @@ div.body button{
     justify-content: center; /* Center horizontally */
      /* Center vertically */
     border-color: #FFFFFF #808080 #808080 #FFFFFF;
+=======
+>>>>>>> origin/main
 }
