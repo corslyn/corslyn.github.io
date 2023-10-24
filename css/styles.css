@@ -13,11 +13,6 @@
     src: url("/webfonts/micross.ttf");
 }
 
-@font-face {
-    font-family: "Streamster";
-    src: url("/webfonts/Streamster.ttf");
-}
-
 .background {
     position: fixed;
     top: 50%;
@@ -64,7 +59,8 @@ h3 {
 
 nav {
     text-align: center;
-    font-family: "MS Sans Serif", sans-serif;
+    font-family: "Tahoma", sans-serif;
+
     font-size: 200%;
 }
 
@@ -166,6 +162,7 @@ div.body button{
     align-items: center;/* Center vertically */
     border-color: #FFFFFF #808080 #808080 #FFFFFF;
     margin-top: 200px;
+
 }
 
 .indexbox {
@@ -174,3 +171,23 @@ div.body button{
     align-items: center;/* Center vertically */
     border-color: #FFFFFF #808080 #808080 #FFFFFF;
 }
+
+.aboutbox {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    border-color: #FFFFFF #808080 #808080 #FFFFFF;
+}
+
+.aboutmap {
+    display: flex;
+}
+
+.aboutimage {
+    display: flex;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    width: 280px;
+}
+
