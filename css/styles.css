@@ -28,6 +28,8 @@
 
 
 
+
+
 h1 {
     text-shadow: -.0625rem -.0625rem 0 #6BFFFF, .0625rem .0625rem 0 #FF819E;
     color: white;
@@ -143,9 +145,7 @@ div.body button{
 
 .nav {
     display: flex;
-    justify-content: flex-start; /* Center horizontally */
-    /* Center vertically */
-   /* Adjust the height based on your requirements */
+    align-items: flex-start;
 }
 
 .box {
@@ -181,6 +181,7 @@ div.body button{
 
 .aboutmap {
     display: flex;
+    margin-left: 10px;
 }
 
 .aboutimage {
@@ -191,3 +192,30 @@ div.body button{
     width: 280px;
 }
 
+.passionsintro {
+    display: flex;
+    justify-content: center;
+}
+
+.passionsmetal1, .passionsmetal2, .passionsmetal3, .passionsmetal4, .passionsguitar1, .passionsguitar2, .passionsguitar3, .passionsguitar4, .passionsvg1, .passionsvg2, .passionsvg3 {
+    display: flex;
+    flex-grow: 2;
+    flex-wrap: nowrap;
+
+}
+
+.passionsmetal, .passionsguitar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 5%;
+    margin-bottom: 80px;
+}
+
+.passionsvg {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10%;
+    margin-bottom: 80px;
+}
