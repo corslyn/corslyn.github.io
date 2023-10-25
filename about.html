@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>𝔸𝕓𝕠𝕦𝕥 𝕞𝕖</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="scripts/main.js"></script>
     <!-- Ajoute-les icones Boxicons (https://boxicons.com/usage#license)-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -17,7 +16,7 @@
 
 <header>
 
-<div class="nav">
+    <div class="nav">
         <div class="box">
             <div class="title">
                 <p class="title">Webpages</p>
@@ -29,9 +28,9 @@
                     <ul>
                         <li><a href="about.html">About me</a></li>
                         <li><a href="passions.html">My passions</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">My Resume</a></li>
-                        <li><a href="#">Acknowledgements</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="cv.html">My Resume</a></li>
+                        <li><a href="remerciements.html">Acknowledgements</a></li>
                         <li><a href="index.html">Home</a></li>
                     </ul>
                 </nav>
@@ -41,22 +40,52 @@
 
 </header>
 
+<div class="aboutrow1">
+    <div class="aboutbox">
+        <div class="box">
+            <div class="title">
+                <p class="title">About me</p>
+                <button>X</button>
+                <button>?</button>
+            </div>
+            <div class="body">
+                My name is Enzo Manzinali, I am 19 years old and I currently live in <a
+                        href="https://maps.app.goo.gl/3Azed3zm7PdTbkP16" target="_blank">
+                    Luze</a>. I made this short video on the right hand of the page to present myself.
 
-<div class="aboutbox">
-    <div class="box">
-        <div class="title">
-            <p class="title">About me</p>
-            <button>X</button>
-            <button>?</button>
+            </div>
         </div>
-        <div class="body">
-            My name is Enzo Manzinali, I am 19 years old and I currently live in <a href="https://maps.app.goo.gl/3Azed3zm7PdTbkP16" target="_blank">
-                Luze</a>. I made this short video on the right hand of the page to present myself.
-
+    </div>
+    <div class="aboutvideo">
+        <div class="box">
+            <div class="title">
+                <p class="title">Video</p>
+                <button>X</button>
+                <button>?</button>
+            </div>
+            <div class="body">
+                <video src="media/video/background.mp4" controls width=100%>Video tag not supported</video>
+            </div>
         </div>
     </div>
 </div>
 
+<div class="aboutrow2">
+
+    <div class="aboutmap">
+        <div class="box" style="width: 500px; height: 500px">
+            <div class="title">
+                <p class="title">Luze</p>
+                <button>X</button>
+                <button>?</button>
+            </div>
+            <div class="body">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21520.50325883258!2d6.696684786768761!3d47.605466456119906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47923fa73f2dec37%3A0x409ce34b30f04e0!2s70400%20Luze!5e0!3m2!1sfr!2sfr!4v1698149240432!5m2!1sfr!2sfr"
+                        width=470 height=450 allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
 <div class="aboutimage">
     <div class="box">
         <div class="title">
@@ -65,33 +94,13 @@
             <button>?</button>
         </div>
         <div class="body">
-            <img src="https://placehold.co/270x338" alt="A photo of myself">
+            <img src="https://placehold.co/270x338" alt="A photo of myself" style="width: 100%">
         </div>
     </div>
 </div>
 
-<div class="aboutmap">
-    <div class="box" style="width: 500px; height: 500px">
-        <div class="title">
-            <p class="title">Luze</p>
-            <button>X</button>
-            <button>?</button>
-        </div>
-        <div class="body">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21520.50325883258!2d6.696684786768761!3d47.605466456119906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47923fa73f2dec37%3A0x409ce34b30f04e0!2s70400%20Luze!5e0!3m2!1sfr!2sfr!4v1698149240432!5m2!1sfr!2sfr" width=470 height=450 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </div>
+
 </div>
 
-<div class="box" style="position:absolute; top: 20%; left: 70%; width: 500px">
-    <div class="title">
-        <p class="title">Video</p>
-        <button>X</button>
-        <button>?</button>
-    </div>
-    <div class="body">
-        <video src="media/video/background.mp4" controls width=475>Video tag not supported</video>
-    </div>
-</div>
 </body>
 </html>

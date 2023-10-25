@@ -17,7 +17,7 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
     background-attachment: fixed;
     z-index: -1;
@@ -25,9 +25,6 @@
     width: 100%;
     height: auto;
 }
-
-
-
 
 
 h1 {
@@ -78,11 +75,11 @@ nav li a {
 }
 
 
-div.title{
-    height:18px;
-    width:100%;
-    background:#000080;
-    color:#FFF;
+div.title {
+    height: 18px;
+    width: 100%;
+    background: #000080;
+    color: #FFF;
 }
 
 p.title {
@@ -93,53 +90,53 @@ p.title {
     float: left;
 }
 
-div.body{
-    padding:13px 12px 12px;
-    height:100%;
-    width:calc(100% - 26px);
-    display:inline-block;
+div.body {
+    padding: 13px 12px 12px;
+    height: 100%;
+    width: calc(100% - 26px);
+    display: inline-block;
 }
 
-div.body p{
-    font-family:"MS Sans Serif", sans-serif;
-    font-size:11px;
+div.body p {
+    font-family: "MS Sans Serif", sans-serif;
+    font-size: 11px;
 }
 
-.title button{
+.title button {
     /*position:absolute;
     right:3px;*/
-    top:3px;
-    margin:2px 2px 2px 0;
-    float:right;
-    width:14px;
-    height:14px;
-    background:#C0C0C0;
-    border-width:1px;
-    border-color:#FFFFFF #808080 #808080 #FFFFFF;
-    padding:0;
-    font-size:9px;
-    font-weight:bold;
-    font-family:Tahoma, sans-serif;
-    text-align:center;
+    top: 3px;
+    margin: 2px 2px 2px 0;
+    float: right;
+    width: 14px;
+    height: 14px;
+    background: #C0C0C0;
+    border-width: 1px;
+    border-color: #FFFFFF #808080 #808080 #FFFFFF;
+    padding: 0;
+    font-size: 9px;
+    font-weight: bold;
+    font-family: Tahoma, sans-serif;
+    text-align: center;
 }
 
-button:focus{
-    outline:none;
+button:focus {
+    outline: none;
 }
 
-div.body button{
-    font-family:"MS Sans Serif", sans-serif;
-    font-size:11px;
-    outline:1px solid #000000;
-    background:#C0C0C0;
-    border-width:1px;
-    border-style:solid;
-    border-color:#FFFFFF #808080 #808080 #FFFFFF;
-    padding:4px 10px;
-    margin:20px auto 3px;
-    display:block;
-    position:relative;
-    bottom:0;
+div.body button {
+    font-family: "MS Sans Serif", sans-serif;
+    font-size: 11px;
+    outline: 1px solid #000000;
+    background: #C0C0C0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #FFFFFF #808080 #808080 #FFFFFF;
+    padding: 4px 10px;
+    margin: 20px auto 3px;
+    display: block;
+    position: relative;
+    bottom: 0;
 
 }
 
@@ -159,7 +156,7 @@ div.body button{
 .indexnav {
     display: flex;
     justify-content: center; /* Center horizontally */
-    align-items: center;/* Center vertically */
+    align-items: center; /* Center vertically */
     border-color: #FFFFFF #808080 #808080 #FFFFFF;
     margin-top: 200px;
 
@@ -168,36 +165,17 @@ div.body button{
 .indexbox {
     display: flex;
     justify-content: center; /* Center horizontally */
-    align-items: center;/* Center vertically */
+    align-items: center; /* Center vertically */
     border-color: #FFFFFF #808080 #808080 #FFFFFF;
 }
 
-.aboutbox {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;
-    border-color: #FFFFFF #808080 #808080 #FFFFFF;
-}
-
-.aboutmap {
-    display: flex;
-    margin-left: 10px;
-}
-
-.aboutimage {
-    display: flex;
-    position: absolute;
-    left: 40%;
-    top: 50%;
-    width: 280px;
-}
 
 .passionsintro {
     display: flex;
     justify-content: center;
 }
 
-.passionsmetal1, .passionsmetal2, .passionsmetal3, .passionsmetal4, .passionsguitar1, .passionsguitar2, .passionsguitar3, .passionsguitar4, .passionsvg1, .passionsvg2, .passionsvg3 {
+.aboutbox, .aboutmap, .aboutimage, .aboutvideo, .passionsmetal1, .passionsmetal2, .passionsmetal3, .passionsmetal4, .passionsguitar1, .passionsguitar2, .passionsguitar3, .passionsguitar4, .passionsvg1, .passionsvg2, .passionsvg3 {
     display: flex;
     flex-grow: 2;
     flex-wrap: nowrap;
@@ -218,4 +196,35 @@ div.body button{
     align-items: center;
     margin-left: 10%;
     margin-bottom: 80px;
+}
+
+
+.aboutrow1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: calc(50% - 175px);
+    margin-bottom: 80px;
+}
+
+.aboutrow2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+    margin-left: 50px;
+}
+
+.cvcol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cvintro, .cv {
+    display: flex;
+    flex-grow: 2;
+    flex-wrap: nowrap;
+    margin-bottom: 80px;
+
 }
