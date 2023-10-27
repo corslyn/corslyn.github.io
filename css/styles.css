@@ -1,230 +1,186 @@
 @font-face {
     font-family: "Tahoma";
-    src: url("/webfonts/Tahoma Regular font.ttf");
+    src: url("../webfonts/TahomaRegularfont.ttf"); /* Importe la police Tahoma */
 }
 
 @font-face {
     font-family: "VCR";
-    src: url("/webfonts/VCR_OSD_MONO_1.001.ttf");
+    src: url("../webfonts/VCR_OSD_MONO_1.001.ttf"); /* Importe la police VCR */
 }
 
 @font-face {
     font-family: "MS Sans Serif";
-    src: url("/webfonts/micross.ttf");
+    src: url("../webfonts/micross.ttf"); /* Importe la police MS Sans Serif */
 }
 
 .background {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    background-attachment: fixed;
-    z-index: -1;
-    object-fit: contain;
-    width: 100%;
-    height: auto;
+    position: fixed; /* Le fond ne bouge pas en scrollant */
+    top: 50%; /* coin supérieur gauche centré verticalement */
+    left: 50%; /* coin supérieur gauche centré horizontalement */
+    transform: translate(-50%, -50%); /* Deplace le fond pour le centrer completement */
+    z-index: -1; /* Met la video au fond */
+    width: 100%; /* taille de la page */
 }
 
-
 h1 {
-    text-shadow: -.0625rem -.0625rem 0 #6BFFFF, .0625rem .0625rem 0 #FF819E;
-    color: white;
-    text-align: center;
-    font-family: "VCR", sans-serif;
-    font-size: 100px;
+    text-shadow: -.0625rem -.0625rem 0 #6BFFFF, .0625rem .0625rem 0 #FF819E; /* cree un effet 3d stereoscopique avec les ombres */
+    color: white; /* met h1 en blanc */
+    text-align: center; /* centre h1 */
+    font-family: "VCR", sans-serif; /* met la police VCR sur h1 */
+    font-size: 100px; /* defini la taille de h1 */
 }
 
 h2 {
-    text-shadow: -.0625rem -.0625rem 0 #6BFFFF, .0625rem .0625rem 0 #FF819E;
-    color: white;
-    text-align: center;
-    transform: rotate(-4deg);
-    position: relative;
-    bottom: 100px;
-    font-size: 100px;
-    font-family: "VCR", sans-serif;
+    text-shadow: -.0625rem -.0625rem 0 #6BFFFF, .0625rem .0625rem 0 #FF819E; /* cree un effet 3d stereoscopique avec les ombres */
+    color: white; /* met h2 en blanc */
+    text-align: center; /* centre h2 */
+    transform: rotate(-4deg); /* pivote h2 de 4° dans le sens anti-horaire */
+    position: relative; /* positionnement relatif pour changer la position verticale */
+    bottom: 100px; /* deplace h2 de 100px vers le bas */
+    font-size: 100px; /* defini la taille de h2 */
+    font-family: "VCR", sans-serif; /* met la police VCR sur h2 */
 }
-
-h3 {
-    text-shadow: -.0625rem -.0625rem 0 #6BFFFF, .0625rem .0625rem 0 #FF819E;
-    color: white;
-    text-align: center;
-    position: relative;
-    font-size: 40px;
-    font-family: "VCR", sans-serif;
-}
-
 
 nav {
-    text-align: center;
-    font-family: "Tahoma", sans-serif;
-
-    font-size: 200%;
+    text-align: center; /* centre le texte horizontalement */
+    font-family: "VCR", sans-serif; /* met la police VCR sur les elements du nav */
+    font-size: 200%; /* double la taille de la police */
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    list-style-type: none; /* enleve les puces des listes */
+    padding: 0; /* enleve l'espace avant les elements des listes */
+    margin: 0; /* enleve l'espace entre les elements des listes */
 }
 
-nav li a {
-    color: black;
-
+a {
+    color: darkblue; /* met les liens en bleu foncé */
 }
-
 
 div.title {
-    height: 18px;
-    width: 100%;
-    background: #000080;
-    color: #FFF;
+    height: 18px; /* defini la taille de barre bleue des fenetres */
+    background: #000080; /* couleur de fond */
+    color: #FFF; /* texte blanc */
 }
 
 p.title {
-    margin: 2px 0 0 1px;
-    font-family: Tahoma, sans-serif;
-    font-weight: bold;
-    font-size: 11px;
-    float: left;
+    margin: 2px 0 0 1px; /* ajoute une marge pour que le texte ne depasse pas de la barre bleue*/
+    font-family: Tahoma, sans-serif; /* police tahoma sur le titre de la fenetre */
+    font-weight: bold; /* texte en gras */
+    font-size: 11px; /* taille du texte */
+    float: left; /* defini le titre comme flottant pour le mettre sur la meme ligne que les boutons */
 }
 
 div.body {
-    padding: 13px 12px 12px;
-    height: 100%;
-    width: calc(100% - 26px);
-    display: inline-block;
+    padding: 13px 12px 12px; /* ajoute un padding dans en haut, a droite et gauche et en bas */
+    width: calc(100% - 26px); /* taille de la fenetre = taille de base - 26px*/
+    color: black; /* couleur du texte */
 }
 
 div.body p {
-    font-family: "MS Sans Serif", sans-serif;
-    font-size: 11px;
+    font-family: "MS Sans Serif", sans-serif; /* police du texte */
+    font-size: 11px; /* taille du texte */
 }
 
 .title button {
-    /*position:absolute;
-    right:3px;*/
-    top: 3px;
-    margin: 2px 2px 2px 0;
-    float: right;
-    width: 14px;
-    height: 14px;
-    background: #C0C0C0;
-    border-width: 1px;
-    border-color: #FFFFFF #808080 #808080 #FFFFFF;
-    padding: 0;
-    font-size: 9px;
-    font-weight: bold;
-    font-family: Tahoma, sans-serif;
-    text-align: center;
+
+    top: 3px; /* deplace les boutons de 3px en haut */
+    margin: 2px 2px 2px 0; /* ajoute une marge en haut, a droite, en bas et la supprime a gauche*/
+    float: right; /* defini les boutons comme flottant pour les mettres sur la meme ligne que le titre */
+    width: 14px; /* 14px de coté */
+    height: 14px; /* 14px de coté */
+    background: #C0C0C0; /* boutons gris */
+    border-width: 1px; /* petite bordure */
+    border-color: #FFFFFF #808080 #808080 #FFFFFF; /* bordure blanche et grise */
+    padding: 0; /* pas de padding */
+    font-size: 9px; /* taille des caracteres */
+    font-weight: bold; /* caracteres en gras*/
+    font-family: Tahoma, sans-serif; /* police tahoma*/
+    text-align: center; /* caracteres centré*/
 }
 
-button:focus {
-    outline: none;
-}
-
-div.body button {
-    font-family: "MS Sans Serif", sans-serif;
-    font-size: 11px;
-    outline: 1px solid #000000;
-    background: #C0C0C0;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #FFFFFF #808080 #808080 #FFFFFF;
-    padding: 4px 10px;
-    margin: 20px auto 3px;
-    display: block;
-    position: relative;
-    bottom: 0;
-
-}
 
 .nav {
-    display: flex;
+    display: flex; /* defini les nav comme etant des flexbox */
     align-items: flex-start;
 }
 
 .box {
-    width: 350px;
-    background: #C0C0C0;
-    border: 1px solid;
-    border-color: #FFFFFF #808080 #808080 #FFFFFF;
-    padding: 1px;
+    width: 350px; /* taille des fenetres */
+    background: #C0C0C0; /* couleur de fond*/
+    border: 1px solid; /* bordure */
+    border-color: #FFFFFF #808080 #808080 #FFFFFF; /* couleur des bordures */
+    padding: 1px; /* ajoute un petit padding*/
 }
 
 .indexnav {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    border-color: #FFFFFF #808080 #808080 #FFFFFF;
-    margin-top: 200px;
-
+    display: flex; /* defini le nav de la page index comme etant un flexbox */
+    justify-content: center; /*centre horizontalement */
+    align-items: center; /* centre verticalement */
+    border-color: #FFFFFF #808080 #808080 #FFFFFF; /* bordure */
+    margin-top: 200px; /* decale la fenetre de 200px en bas*/
 }
 
 .indexbox {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    border-color: #FFFFFF #808080 #808080 #FFFFFF;
+    display: flex; /* defini la fenetre texte de la page index comme etant un flexbox */
+    justify-content: center; /*centre horizontalement */
+    align-items: center; /* centre verticalement */
+    border-color: #FFFFFF #808080 #808080 #FFFFFF; /* bordure */
 }
 
-
 .passionsintro {
-    display: flex;
-    justify-content: center;
+    display: flex; /*utilise un flexbox*/
+    justify-content: center; /*centre horizontalement */
 }
 
 .aboutbox, .aboutmap, .aboutimage, .aboutvideo, .passionsmetal1, .passionsmetal2, .passionsmetal3, .passionsmetal4, .passionsguitar1, .passionsguitar2, .passionsguitar3, .passionsguitar4, .passionsvg1, .passionsvg2, .passionsvg3 {
-    display: flex;
-    flex-grow: 2;
-    flex-wrap: nowrap;
-
+    display: flex; /*utilise un flexbox*/
+    flex-grow: 2; /* les elements prennent plus d'espace dans le container */
+    flex-wrap: nowrap; /* ne saute pas de 'ligne'*/
 }
 
-.passionsmetal, .passionsguitar {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+.passionsmetal {
+    display: flex;/*utilise un flexbox*/
+    justify-content: flex-start;/* ligne centree verticalement */
+    align-items: center;/* ligne centree verticalement */
     margin-left: 5%;
-    margin-bottom: 80px;
+    margin-bottom: 80px;/* 80px de vide entre les containers */
 }
 
-.passionsvg {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 10%;
-    margin-bottom: 80px;
+.passionsvg, .passionsguitar {
+    display: flex;/*utilise un flexbox*/
+    justify-content: flex-start;/* ligne centree verticalement */
+    align-items: center;/* ligne centree verticalement */
+    margin-left: 10%; /* 10% de vide entre les elements */
+    margin-bottom: 80px;/* 80px de vide entre les containers */
 }
 
 
 .aboutrow1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: calc(50% - 175px);
-    margin-bottom: 80px;
+    display: flex;/*utilise un flexbox*/
+    justify-content: center;/* ligne centree horizontalement */
+    align-items: center;/* ligne centree verticalement */
+    margin-left: calc(50% - 175px); /* espace = 50% de la fenetre - 175px */
+    margin-bottom: 80px;/* 80px de vide entre les containers */
 }
 
 .aboutrow2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 80px;
-    margin-left: 50px;
+    display: flex;/*utilise un flexbox*/
+    justify-content: space-between; /* repartit les elements dans le container */
+    align-items: center; /* ligne centree verticalement */
+    margin-bottom: 80px;/* 80px de vide entre les containers */
+    margin-left: 50px; /* 50px de vide entre les elements */
 }
 
 .cvcol {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: flex;/*utilise un flexbox*/
+    flex-direction: column;/* les elements sont disposés en colonne*/
+    align-items: center; /* colonne centree verticalement */
 }
 
 .cvintro, .cv {
-    display: flex;
-    flex-grow: 2;
-    flex-wrap: nowrap;
-    margin-bottom: 80px;
-
+    display: flex;/*utilise un flexbox*/
+    flex-grow: 2;/* les elements prennent plus d'espace dans le container */
+    flex-wrap: nowrap;/* ne saute pas de 'ligne'*/
+    margin-bottom: 80px; /* 80px de vide entre les elements */
 }
