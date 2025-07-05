@@ -1,0 +1,34 @@
+[info]
+codepage=65001
+readonly=true
+version=4.00
+format=2.00
+title=Network Blitz
+refcount=3
+
+[titles]
+1040=Rete
+1053=Skimmer
+1032=Μοντέρνο δίκτυο
+1036=Réseau
+1031=Netzwerk 2
+1044=Søkelys
+2052=网络蓝
+1028=閃電
+1042=네트워크
+1038=Villám
+1049=Бомбежка
+1046=Quartz
+1041=青銅
+2070=Eléctrico
+1054=สงครามเครือข่าย
+1025=شبكة اتصال سريعة
+3082=Ataque radial
+1035=Hohde
+1030=Netværk
+1043=Netwerk
+1029=Sítě
+1045=Zmierzch
+1037=מתקפת רשת פתאומית
+1055=Ağ Saldırısı
+
