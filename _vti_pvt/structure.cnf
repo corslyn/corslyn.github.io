@@ -1,14 +1,14 @@
 3.0.0.507
-1010
+1011
 1000,index.htm,0,Bienvenue sur mon site Web,0,1751571277,1
 vti_globalpage:BW|true
 1001,aboutme.htm,0,Je me présente,1000,1751571277,0
-1002,projects.htm,0,Centres d'intérêt,1000,1751730489,0
+1002,projects.htm,0,Projets,1000,1751919371,0
 1006,modem.htm,0,Liaison 33.6k,1000,1751710063,0
-1003,favorite.htm,0,Projets,1000,1751730488,0
 1004,photo.htm,0,Galerie photo,1000,1751571277,0
 1005,feedback.htm,0,Contactez-moi,1000,1751571277,0
 1007,legal.htm,0,Mentions légales,1000,1751665510,0
 1008,explication.htm,0,Explications,1006,1751710790,1
 vti_nonnavpage:BW|false
 1009,setup.htm,0,L'installation,1006,1751714514,0
+1010,cheatsheet.htm,0,Commandes AT,1006,1751920945,0

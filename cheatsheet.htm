@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="Content-Language" content="fr">
-<title>L&#39;installation</title>
+<title>Commandes AT</title>
 <style>
   .badge {
     display: inline-block;
@@ -31,7 +31,7 @@
 	<tr>
 		<td width="150" colspan="2" align="center">&nbsp;</td>
 		<td align="center">
-		<!--webbot bot="Navigation" s-type="banner" s-rendering="graphics" s-orientation b-include-home b-include-up u-page s-target startspan --><img src="_derived/setup.htm_cmp_blitz010_bnr.gif" width="600" height="60" border="0" alt="L'installation"><!--webbot bot="Navigation" i-checksum="51947" endspan -->
+		<!--webbot bot="Navigation" s-type="banner" s-rendering="graphics" s-orientation b-include-home b-include-up u-page s-target startspan --><img src="_derived/cheatsheet.htm_cmp_blitz010_bnr.gif" width="600" height="60" border="0" alt="Commandes AT"><!--webbot bot="Navigation" i-checksum="15422" endspan -->
 		</td>
 	</tr>
 	<tr>
@@ -78,56 +78,24 @@ if(MSFPhover) { MSFPnav2n=MSFPpreload("_derived/up_cmp_blitz010_vbtn.gif"); MSFP
 		</td>
 		<td valign="top" width="100%" height="100%" style="border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium">
 		
-<h3 align="left">
-		L&#39;installation</h3>
-		<p align="left">
-		Je compte réaliser l&#39;installation suivante :</p>
-<p align="left">
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RJ11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-		RS-232 USB</p>
-<p align="left">
-		Box &lt;----&gt; Modem &lt;----&gt; RPI</p>
-		<p align="left">
-		Dans le futur, j&#39;intégrerai un PABX afin de me fournir un accès à 
-		Internet 56k en local, les modems ayant besoin de lignes téléphoniques 
-		distinctes (1 modem = 1 ligne).</p>
-<h3 align="left">
-		<font face="Verdana">07/07/25</font></h3>
-<p align="left">
-		J&#39;ai installé dans mon labo <font size="1">(sur mon bureau dans ma 
-		chambre)</font> un PABX Alcatel OmniPCX Office Compact - donné par M. 
-		Millet, enseignant à l&#39;IUT de Montbéliard - ainsi que des téléphones : </p>
-<ul>
-	<li>
-	<p align="left">Un 4039 Numérique</p></li>
-	<li>
-	<p align="left">Un Doro Matra analogique</p></li>
-</ul>
-<p align="left">J&#39;ai également connecté des modems 56k :</p>
-<ul>
-	<li>
-	<p align="left">Un intégré de mon IBM Thinkpad R50p (Windows XP)</p></li>
-	<li>
-	<p align="left">Un externe : 3Com U.S. Robotics 56K Message Modem, connecté 
-	à mon Lenovo Thinkpad T14 (Arch Linux)</p></li>
-</ul>
-<p align="left">J&#39;ai ensuite rapidement créé un plan de numérotation à 4 
-chiffres pour que les téléphones puissent communiquer entre eux.</p>
-<p align="left">Une fois le bon fonctionnement confirmé, j&#39;ai tenté d&#39;établir 
-une connexion entre les deux modems avec minicom sur Linux et l&#39;Hyperterminal 
-sur XP. Les deux modems parviennent à se connecter à 33.6kbit/s, ce qui était 
-prévu.</p>
-<p align="left">J&#39;ai ensuite tenté d&#39;envoyer des fax avec hylafax sur Linux, ce 
-qui fonctionne parfaitement bien (en noir et blanc). Cependant, je n&#39;arrive pas 
-à recevoir de fax sur Linux, ce que je ne comprends pas encore. A voir....</p>
-<p align="left">Pareil, pour le transfert de fichiers classiques (images, 
-musique, vidéo), je passe par minicom côté linux, mais il ne semble pas 
-comprendre le modem en face, même si il utilise le même protocole de transfert (zmodem)...</p>
-<p align="left">Bientôt<font face="Verdana">™</font> des photos de l&#39;install, à 
-suivre.</p>
+<h3 align="left">Commandes de modem</h3>
+<p align="left">Le modem peut être contrôlé via le port série en utilisant les 
+commandes AT. Il faut ajouter AT (Attention) avant chaque commande pour annoncer 
+au modem qu&#39;il s&#39;agit d&#39;une commande.</p>
+<p align="left">Une liste non exhaustive :</p>
+<p align="left"><b>ATD0123456789 </b>: appelle le 01 23 45 67 89 </p>
+<p align="left"><b>ATH</b> : raccroche</p>
+<p align="left"><b>ATZ</b> : remise à zero</p>
+<p align="left"><b>AT&amp;F</b> : reset d&#39;usine</p>
+<p align="left"><b>AT&amp;W</b> : enregistrer la config</p>
+<p align="left"><b>ATI0 à ATI7</b> : infos du modem</p>
+<p align="left"><b>ATS0=n</b> : décroche automatiquement au bout de n sonneries</p>
+<p align="left"><b>ATM&lt;n&gt;</b> : comportement du HP (0 off - 1 actif jusqu&#39;à la 
+connexion - 2 toujours on)</p>
+<p align="left"><b>ATL&lt;n&gt; </b>: volume du HP (0 muet - 3 fort)</p>
 <p align="center">
 		<small>
-		<!--webbot bot="Navigation" s-orientation="horizontal" s-rendering="html" s-bar="Bars" s-btn-nml="&lt;A HREF=&quot;#URL#&quot; TARGET=&quot;#TARGET#&quot; STYLE=&quot;text-decoration: none;&quot;&gt;#LABEL#&lt;/A&gt;" s-btn-sel="#LABEL#" s-btn-sep="&amp;nbsp;|&amp;nbsp;" s-type="siblings" b-include-home="TRUE" b-include-up="TRUE" startspan --><nobr><A HREF="index.htm" TARGET="" STYLE="text-decoration: none;">Accueil</A></nobr>&nbsp;|&nbsp;<nobr><A HREF="modem.htm" TARGET="" STYLE="text-decoration: none;">Remonter</A></nobr>&nbsp;|&nbsp;<nobr><A HREF="explication.htm" TARGET="" STYLE="text-decoration: none;">Explications</A></nobr>&nbsp;|&nbsp;<nobr>L&#39;installation</nobr>&nbsp;|&nbsp;<nobr><A HREF="cheatsheet.htm" TARGET="" STYLE="text-decoration: none;">Commandes&nbsp;AT</A></nobr><!--webbot bot="Navigation" i-checksum="58012" endspan -->
+		<!--webbot bot="Navigation" s-orientation="horizontal" s-rendering="html" s-bar="Bars" s-btn-nml="&lt;A HREF=&quot;#URL#&quot; TARGET=&quot;#TARGET#&quot; STYLE=&quot;text-decoration: none;&quot;&gt;#LABEL#&lt;/A&gt;" s-btn-sel="#LABEL#" s-btn-sep="&amp;nbsp;|&amp;nbsp;" s-type="siblings" b-include-home="TRUE" b-include-up="TRUE" startspan --><nobr><A HREF="index.htm" TARGET="" STYLE="text-decoration: none;">Accueil</A></nobr>&nbsp;|&nbsp;<nobr><A HREF="modem.htm" TARGET="" STYLE="text-decoration: none;">Remonter</A></nobr>&nbsp;|&nbsp;<nobr><A HREF="explication.htm" TARGET="" STYLE="text-decoration: none;">Explications</A></nobr>&nbsp;|&nbsp;<nobr><A HREF="setup.htm" TARGET="" STYLE="text-decoration: none;">L&#39;installation</A></nobr>&nbsp;|&nbsp;<nobr>Commandes&nbsp;AT</nobr><!--webbot bot="Navigation" i-checksum="24764" endspan -->
 		</small></p>
 		<p><i><small>La dernière mise à jour de ce site date du
 		<!--webbot bot="Timestamp" s-type="EDITED" s-format="%d/%m/%y" startspan -->07/07/25<!--webbot bot="Timestamp" i-checksum="13098" endspan -->
