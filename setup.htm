@@ -46,7 +46,7 @@
 		<td style="border-bottom-style: solid; border-bottom-width: 1" align="right">
 		
 		<h4>
-		<!--webbot bot="Timestamp" s-type="REGENERATED" s-format="%d/%m/%y" startspan -->07/07/25<!--webbot bot="Timestamp" i-checksum="13098" endspan -->
+		<!--webbot bot="Timestamp" s-type="REGENERATED" s-format="%d/%m/%y" startspan -->13/07/25<!--webbot bot="Timestamp" i-checksum="13091" endspan -->
 		</h4>
 		</td>
 	</tr>
@@ -123,41 +123,89 @@ qui fonctionne parfaitement bien (en noir et blanc). Cependant, je n&#39;arrive 
 <p align="left">Pareil, pour le transfert de fichiers classiques (images, 
 musique, vidéo), je passe par minicom côté linux, mais il ne semble pas 
 comprendre le modem en face, même si il utilise le même protocole de transfert (zmodem)...</p>
-<p align="left">Bientôt<font face="Verdana">™</font> des photos de l&#39;install, à 
-suivre.</p>
+<p align="left">Une photo de l&#39;install (ignorez le bazar, c&#39;est un labo)</p>
+<p align="left">
+<img border="0" src="images/IMG_20250713_184515.jpg" width="1000"></p>
+<p align="left">13/07/25</p>
+<p align="left">Update apres une semaine de pas grand chose et de boulot (réel).</p>
+<p align="left">J&#39;ai mis Debian 12 sur l&#39;IBM pour avoir un semblant de sécurité 
+sachant qu&#39;il sera exposé sur Internet, et j&#39;y ai mis un DC pour tester un peu 
+l&#39;AD sur Linux avec Samba. J&#39;ai créé des groupes ayant des droits spécifiques :</p>
+<p align="center">
+<img border="0" src="images/setup.1.jpg"></p>
+<ul>
+	<li>
+	<p align="left">&nbsp;ppp_users qui va avoir un accès à uniquement ce site 
+	web</p></li>
+	<li>
+	<p align="left">&nbsp;bbs_users qui va avoir accès au BBS bientôt<font face="Verdana">™</font> 
+	disponible</p></li>
+	<li>
+	<p align="left">&nbsp;internet_users pour l&#39;accès à internet 33.6k</p></li>
+</ul>
+<p align="left">POur ce qui est de la gestion du modem, il faut savoir plusieurs 
+choses:</p>
+<ul>
+	<li>
+	<p align="left">&nbsp;Le modem intégré à l&#39;IBM est un softmodem/Winmodem, ce 
+	qui signifie qu&#39;il compte sur un driver Windows pour le piloter, 
+	contrairement à un modem externe qui est complètement autonome : on lui 
+	envoie des commandes et il gère cela tout seul</p></li>
+	<li>
+	<p align="left">&nbsp;Les softmodems sont tellement vieux qu&#39;ils n&#39;ont 
+	quasiment plus de support sur les nouvelles versions de Debian...</p></li>
+	<li>
+	<p align="left">&nbsp;Le softmodem n&#39;a même pas de port série associé, il 
+	est donc impossible de lui envoyer des commandes</p></li>
+</ul>
+<p align="left">Par contre, le modem est bien détecté dans lspci et est 
+considéré par ALSA comme étant une carte son :</p>
+<p align="center">
+<img border="0" src="images/setup.2.gif"></p>
+<p align="center">
+<img border="0" src="images/setup.3.gif"></p>
+<p align="left">J&#39;ai utilisé ensuite slmodemd afin d&#39;avoir un port série associé 
+au modem. Or slmodemd n&#39;est plus dans les dépôts Debian, il faut le compiler à 
+la main en faisant des changements dans les sources car le kernel a changé 
+depuis 2006. slmodem était conçu pour Linux 2.6, et Debian 12 est sur Linux 
+6.1...</p>
+<p align="left">Après compilation et exécution on a un port série associé !</p>
+<p align="center">
+<img border="0" src="images/setup.4.gif"></p>
+<p align="left">On ajoute l&#39;argument -r pour détecter la sonnerie, sans ça, on 
+ne voit pas dans minicom (moniteur série) les RING, et donc on ne peut pas 
+détecter un appel.</p>
+<p align="left">Par contre, comme le modem est une carte son, il faut monter le 
+volume dans alsamixer et s&#39;assurer que rien d&#39;important ne soit mute (micro, 
+Caller ID...), mais il faut mute Off-hook qui représente le combiné décroché : 
+si le combiné est décroché, la ligne sonne occupée.</p>
+<p align="center">
+<img border="0" src="images/setup.5.gif"></p>
+<p align="center">
+<img border="0" src="images/setup.6.gif"></p>
+<p align="left">On peut ensuite tenter un appel vers le serveur, on ouvre 
+minicom pour avoir un suivi de ce qui se passe, et on appelle (monter le son 
+pour entendre la douce mélodie de handshake <font face="Wingdings">J</font>) :</p>
+<p align="left">&nbsp;</p>
+<video controls width="250">
+  <source src="video/dialup.mp4" type="video/mp4" />
+
+  Télécharger la vidéo en
+  <a href="video/dialup.mp4">MP4</a>.
+</video>
+<p>Je peux enfin utiliser le modem !!! Plus qu&#39;à faire en sorte décrocher et 
+raccrocher automatiquement, mettre un serveur PPP, BBS et gérer les droits.</p>
+<p align="left">&nbsp;</p>
 <p align="center">
 		<small>
 		<!--webbot bot="Navigation" s-orientation="horizontal" s-rendering="html" s-bar="Bars" s-btn-nml="&lt;A HREF=&quot;#URL#&quot; TARGET=&quot;#TARGET#&quot; STYLE=&quot;text-decoration: none;&quot;&gt;#LABEL#&lt;/A&gt;" s-btn-sel="#LABEL#" s-btn-sep="&amp;nbsp;|&amp;nbsp;" s-type="siblings" b-include-home="TRUE" b-include-up="TRUE" startspan --><nobr><A HREF="index.htm" TARGET="" STYLE="text-decoration: none;">Accueil</A></nobr>&nbsp;|&nbsp;<nobr><A HREF="modem.htm" TARGET="" STYLE="text-decoration: none;">Remonter</A></nobr>&nbsp;|&nbsp;<nobr><A HREF="explication.htm" TARGET="" STYLE="text-decoration: none;">Explications</A></nobr>&nbsp;|&nbsp;<nobr>L&#39;installation</nobr>&nbsp;|&nbsp;<nobr><A HREF="cheatsheet.htm" TARGET="" STYLE="text-decoration: none;">Commandes&nbsp;AT</A></nobr><!--webbot bot="Navigation" i-checksum="58012" endspan -->
 		</small></p>
 		<p><i><small>La dernière mise à jour de ce site date du
-		<!--webbot bot="Timestamp" s-type="EDITED" s-format="%d/%m/%y" startspan -->07/07/25<!--webbot bot="Timestamp" i-checksum="13098" endspan -->
+		<!--webbot bot="Timestamp" s-type="EDITED" s-format="%d/%m/%y" startspan -->13/07/25<!--webbot bot="Timestamp" i-checksum="13091" endspan -->
 		</small></i></p>
 		</td>
 	</tr>
 </table>
-
-<script>
-  function verifierEtatLigne() {
-    const maintenant = new Date();
-    const jour = maintenant.getDay(); // 0 = dimanche, 1 = lundi…
-    const heure = maintenant.getHours();
-
-    let etat = 'fermee';
-
-    if (jour >= 1 && jour <= 5 && heure >= 19 && heure < 22) {
-      etat = 'ouverte';
-    } else if (jour === 6 && heure >= 14 && heure < 18) {
-      etat = 'ouverte';
-    }
-
-    const badge = document.getElementById('etat-ligne');
-    badge.textContent = 'Ligne ' + (etat === 'ouverte' ? 'ouverte' : 'fermée');
-    badge.className = 'badge ' + etat;
-  }
-
-  verifierEtatLigne();
-  setInterval(verifierEtatLigne, 60000); // Mise à jour chaque minute
-</script>
 
 </body>
 

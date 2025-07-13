@@ -1,3 +1,8 @@
 table {
   color: #000000 !important;
 }
+ video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
