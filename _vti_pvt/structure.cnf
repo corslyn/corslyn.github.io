@@ -1,5 +1,5 @@
 3.0.0.507
-1011
+1012
 1000,index.htm,0,Bienvenue sur mon site Web,0,1751571277,1
 vti_globalpage:BW|true
 1001,aboutme.htm,0,Je me présente,1000,1751571277,0
@@ -11,4 +11,5 @@ vti_globalpage:BW|true
 1008,explication.htm,0,Explications,1006,1751710790,1
 vti_nonnavpage:BW|false
 1009,setup.htm,0,L'installation,1006,1751714514,0
+1011,minitel.htm,0,Serveur Minitel,1006,1754394528,0
 1010,cheatsheet.htm,0,Commandes AT,1006,1751920945,0
