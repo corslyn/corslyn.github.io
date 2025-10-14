@@ -22,3 +22,7 @@ theme = 'hugo-theme-console'
 [[params.navlinks]]
   name = "Photos"
   url = "/photos/"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
