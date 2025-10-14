@@ -1,0 +1,24 @@
+baseURL = 'https://corslyn.github.io/'
+languageCode = 'fr-fr'
+title = 'root@portfolio'
+theme = 'hugo-theme-console'
+
+[params]
+  description = "My portfolio website"
+  animateStyle = "animate-fade-up" # Animation style for content
+
+[[params.navlinks]]
+  name = "About"
+  url = "/about/"
+
+[[params.navlinks]]
+  name = "Projects"
+  url = "/projects/"
+
+[[params.navlinks]]
+  name = "Posts"
+  url = "/posts/"
+
+[[params.navlinks]]
+  name = "Photos"
+  url = "/photos/"
