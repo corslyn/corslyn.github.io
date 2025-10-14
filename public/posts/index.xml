@@ -2,11 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on root@portfolio</title>
-    <link>https://corslyn.github.io/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on root@portfolio</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="https://corslyn.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Oct 2025 21:30:26 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Breaking ECDSA (or something like that)</title>
+      <link>http://localhost:1313/posts/breaking-ecdsa/</link>
+      <pubDate>Tue, 14 Oct 2025 21:30:26 +0200</pubDate>
+      <guid>http://localhost:1313/posts/breaking-ecdsa/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Worldskills Dijon 2025</title>
+      <link>http://localhost:1313/posts/worldskills/</link>
+      <pubDate>Sun, 30 Mar 2025 21:36:05 +0200</pubDate>
+      <guid>http://localhost:1313/posts/worldskills/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
