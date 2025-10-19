@@ -4,7 +4,7 @@ title = 'root@portfolio'
 theme = 'hugo-theme-console'
 
 [params]
-  description = "My portfolio website"
+  description = "Enzo MANZINALI - Portfolio"
   animateStyle = "animate-fade-up" # Animation style for content
 
 [[params.navlinks]]
