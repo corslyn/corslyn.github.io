@@ -17,9 +17,12 @@ Pendant deux jours, nous avons enchaîné plusieurs épreuves intenses :
 - Réseau (sur matériel Cisco)
 - Résolution de problèmes
 
-Chaque épreuve durait trois heures, et pourtant, le temps filait à une vitesse incroyable ! Les sujets étaient denses – parfois jusqu’à 12 pages chacun – et demandaient une grande concentration. De plus, nous n'avions **aucun accès à Internet**, donc pas de documentation, d'exemples ou de ChatGPT ;). À cela s’ajoutait un environnement particulier : la compétition se déroulait en plein cœur du forum des métiers, entourée de stands, de visiteurs, et d’un brouhaha constant. Une vraie immersion dans la pression du terrain !
+Chaque épreuve durait trois heures, et pourtant, le temps filait à une vitesse incroyable ! Les sujets étaient denses - parfois jusqu’à 12 pages chacun - et demandaient une grande concentration. De plus, nous n'avions *aucun* accès à Internet, donc pas de documentation, d'exemples ou de ChatGPT ;). À cela s’ajoutait un environnement particulier : la compétition se déroulait en plein cœur du forum des métiers, entourée de stands, de visiteurs (dont des lycéens/collégiens), et d’un brouhaha constant.  
 
 Le deuxième jour, pendant que nous étions en épreuves, les épreuves de la catégorie Cybersécurité commençaient, avec [Paul-Émile NGUYEN-TAN-HON](https://www.linkedin.com/in/paul-emile-nguyen-tan-hon-517372306/) et [Nantenaina RANDRIANASOLO.](https://www.linkedin.com/in/nantenaina-randrianasolo-2538482b9/)
+
+![photo nous](../../photos/competiteurs.jpg)
+*Crédit photo : IUT Nord Franche-Comté*
 
 Cette édition a également renforcé la "tradition" du département depuis 2012 : le champion régional vient du département, et cette fois, le podium **entier** est de notre IUT !  
 🥇 **Ludovic GOUGEON**, qualifié pour les épreuves nationales à Marseille  
@@ -33,7 +36,7 @@ En Cybersécurité, Paul-Émile et Nantenaina ont décroché la **médaille de b
 
 Au-delà du résultat, cette expérience a été extrêmement enrichissante. J’y ai appris à gérer mon stress, à travailler efficacement sous pression, et surtout à repousser mes limites. Participer aux Worldskills m’a aussi permis de mesurer concrètement le niveau d’exigence attendu dans le monde professionnel et de renforcer ma passion pour l’administration réseau.
 
-En résumé : deux jours intenses, un challenge technique passionnant, et une belle fierté de représenter notre département sur le podium ! 🎉
+En résumé : deux jours intenses, un challenge technique passionnant, et une belle fierté de représenter notre département sur le podium !  
 
 
 ![Groupe](../../photos/groupe.jpg)
