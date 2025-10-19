@@ -24,3 +24,4 @@ Et quand on parle d’infrastructure, on parle de **TOUTE** l’infrastructure :
 
 À ce jour (2025-10-12), j'ai mis en place un serveur HPE Proliant avec ESXi dessus pour gérer les VMs, et installé un accès à distance afin de pouvoir travailler dessus depuis chez moi. Sinon, je ne peux travailler que lorsque je suis à l'IUT.
 
+Je travaille également sur la conception de challenges, en non-catégorisé (Misc), en cracking et surtout en cryptographie. La plus grande difficulté dans la conception des challenges n'est pas forcément la création en elle même, mais il faut que ces challenges restent accessible pour des étudiant.es de première et deuxième année... 
