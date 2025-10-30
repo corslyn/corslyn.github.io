@@ -1,7 +1,7 @@
 +++
 title = 'Serveur Minitel'
 date = 2025-10-14T21:39:48+02:00
-draft = true
+draft = false
 +++
 
 Pendant les vacances d'été 2025, je me suis plongé dans le monde merveilleux de la téléphonie analogique. Entre les modems, les connexions 56k et les BBS, j'ai eu l'idée quelque peu saugrenue d'acheter un Minitel. Vous savez, cet écran glorifié qui pèse presque 5 kilos et qui a plus de 50 ans... À son époque, c'était la pointe de la technologie française (oui oui française), mais France Télécom a débranché les derniers services en 2012, faute d'utilisateurs.
