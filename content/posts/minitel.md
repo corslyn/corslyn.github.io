@@ -52,7 +52,7 @@ Concernant l'ordinateur hébergeant le serveur, j'avais initialement utilisé un
 
 ## Démonstration
 
-Voici une petite démonstration des fonctionnalités présentes sur mon serveur, en utilisant un Minitel 2 d'Alcatel fabriqué en 1982, et encore parfaitement fonctionnel (Pas mal, non ? C'est français) :
+Voici une petite démonstration des fonctionnalités présentes sur mon serveur, en utilisant un Minitel 2 d'Alcatel fabriqué en 1989, et encore parfaitement fonctionnel (Pas mal, non ? C'est français) :
 
 # INSÉRER VIDÉO ICI
 
@@ -70,7 +70,7 @@ Bien que les DRCS donnent généralement des images de meilleure qualité par ra
 
 *Animations GIF générées avec MiEdit - https://minitel.cquest.org/*
 
-On constate bien la latence d'affichage de l'image en DRCS par rapport au semi-graphique.
+On constate bien la latence d'affichage de l'image en DRCS par rapport au semi-graphique, malgré les meilleurs détails.
 
 ## Conclusion
 
