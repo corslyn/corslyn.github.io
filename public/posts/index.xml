@@ -2,31 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on root@portfolio</title>
-    <link>http://192.168.1.175:42613/posts/</link>
+    <link>https://corslyn.github.io/posts/</link>
     <description>Recent content in Posts on root@portfolio</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Tue, 14 Oct 2025 21:39:48 +0200</lastBuildDate>
-    <atom:link href="http://192.168.1.175:42613/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Serveur Minitel</title>
-      <link>http://192.168.1.175:42613/posts/minitel/</link>
-      <pubDate>Tue, 14 Oct 2025 21:39:48 +0200</pubDate>
-      <guid>http://192.168.1.175:42613/posts/minitel/</guid>
-      <description>Pendant les vacances d&amp;rsquo;été 2025, je me suis plongé dans le monde merveilleux de la téléphonie analogique. Entre les modems, les connexions 56k et les BBS, j&amp;rsquo;ai eu l&amp;rsquo;idée quelque peu saugrenue d&amp;rsquo;acheter un Minitel. Vous savez, cet écran glorifié qui pèse presque 5 kilos et qui a plus de 50 ans&amp;hellip; A une époque, c&amp;rsquo;était la pointe de la technologie française (oui oui française), mais France Télécom a débranché les derniers services en 2012, faute d&amp;rsquo;utilisateurs.</description>
-    </item>
-    <item>
-      <title>Casser la cryptographie moderne (ou presque)</title>
-      <link>http://192.168.1.175:42613/posts/breaking-ecdsa/</link>
-      <pubDate>Tue, 14 Oct 2025 21:30:26 +0200</pubDate>
-      <guid>http://192.168.1.175:42613/posts/breaking-ecdsa/</guid>
-      <description>J&amp;rsquo;ai fait un challenge sur Root Me ce mois-ci, et il m&amp;rsquo;a particulièrement donné du fil à retordre.&#xA;Il portait sur l&amp;rsquo;ECDSA - ou Elliptic Curve Digital Signature Algorithm - qui est l&amp;rsquo;évolution du DSA - ou Digital Signature Algorithm - mais qui utilise des courbes elliptiques au lieu du RSA standard.&#xA;Ce challenge était tellement intéressant que j&amp;rsquo;ai décidé de vous apprendre le fonctionnement de l&amp;rsquo;ECDSA et ses limites.</description>
-    </item>
+    <lastBuildDate>Mon, 13 Oct 2025 21:36:05 +0200</lastBuildDate>
+    <atom:link href="https://corslyn.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Worldskills Dijon 2025</title>
-      <link>http://192.168.1.175:42613/posts/worldskills/</link>
+      <link>https://corslyn.github.io/posts/worldskills/</link>
       <pubDate>Mon, 13 Oct 2025 21:36:05 +0200</pubDate>
-      <guid>http://192.168.1.175:42613/posts/worldskills/</guid>
+      <guid>https://corslyn.github.io/posts/worldskills/</guid>
       <description>Les 19 et 20 mars 2025, j’ai eu la chance de participer aux épreuves régionales des Worldskills, anciennement appelées Olympiades des Métiers, qui se déroulaient au Parc des Expositions de Dijon. Cet événement réunit chaque année de jeunes passionnés venus de toute la région pour mettre leurs compétences à l’épreuve dans des métiers très variés.&#xA;Pour ma part, j’ai concouru dans la catégorie Administration des Systèmes et Réseaux Informatiques, aux côtés de Ludovic GOUGEON, Étienne PAQUELET, Damien LETALLEUR, Suha KUT, ainsi qu’un étudiant de l’IUT d’Auxerre.</description>
     </item>
   </channel>

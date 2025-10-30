@@ -2,25 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on root@portfolio</title>
-    <link>http://192.168.1.175:42613/projects/</link>
+    <link>https://corslyn.github.io/projects/</link>
     <description>Recent content in Projects on root@portfolio</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Tue, 14 Oct 2025 21:29:41 +0200</lastBuildDate>
-    <atom:link href="http://192.168.1.175:42613/projects/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Raytracer</title>
-      <link>http://192.168.1.175:42613/projects/raytracer/</link>
-      <pubDate>Tue, 14 Oct 2025 21:29:41 +0200</pubDate>
-      <guid>http://192.168.1.175:42613/projects/raytracer/</guid>
-      <description>Un raytracer ? Qu&amp;rsquo;est-ce que c&amp;rsquo;est ?? </description>
-    </item>
-    <item>
-      <title>SecuRT 2026</title>
-      <link>http://192.168.1.175:42613/projects/securt/</link>
-      <pubDate>Sun, 12 Oct 2025 19:01:38 +0200</pubDate>
-      <guid>http://192.168.1.175:42613/projects/securt/</guid>
-      <description>Remise en contexte Dans le cadre de notre troisième année en BUT Réseaux &amp;amp; Télécoms - parcours Cybersécurité - nous avons pour mission d&amp;rsquo;organiser un CTF à destination des étudiant.es de première et deuxième année intéressé.es par la cybersécurité.&#xA;Que suis-je en train de faire ? Je travaille - avec Paul Solis et Alexis Coniglio - sur la mise en place de toute l’infrastructure nécessaire au bon déroulement de ce CTF.</description>
-    </item>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://corslyn.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
