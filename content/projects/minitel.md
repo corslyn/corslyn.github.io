@@ -4,7 +4,7 @@ date = 2025-10-14T21:39:48+02:00
 draft = false
 +++
 
-Pendant les vacances d'été 2025, je me suis plongé dans le monde merveilleux de la téléphonie analogique. Entre les modems, les connexions 56k et les BBS, j'ai eu l'idée quelque peu saugrenue d'acheter un Minitel. Vous savez, cet écran glorifié qui pèse presque 5 kilos et qui a plus de 50 ans... À son époque, c'était la pointe de la technologie française (oui oui française), mais France Télécom a débranché les derniers services en 2012, faute d'utilisateurs.
+Pendant les vacances d'été 2025, je me suis plongé dans le monde merveilleux de la téléphonie analogique. Entre les modems, les connexions 56k (connexion via ligne téléphonique à 56kbit/s, qui date d'avant l'ADSL) et les *BBS* (*Bulletin Board System*, des serveurs permettant l'échange de messages, d'informations, datant d'avant Internet), j'ai eu l'idée quelque peu saugrenue d'acheter un Minitel. Vous savez, cet écran glorifié qui pèse presque 5 kilos et qui a plus de 50 ans... À son époque, c'était la pointe de la technologie française (oui oui française), mais France Télécom a débranché les derniers services en 2012, faute d'utilisateurs.
 
 *Alors pourquoi acheter un Minitel en 2025 si plus rien ne fonctionne depuis plus de 10 ans ?*
 
