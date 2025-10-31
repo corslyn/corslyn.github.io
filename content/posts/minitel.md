@@ -50,11 +50,11 @@ Le principal "problème" de Rust est sa complexité en raison de la sécurité d
 
 Concernant l'ordinateur hébergeant le serveur, j'avais initialement utilisé un ordinateur portable IBM ayant une vingtaine d'années afin de lui donner une seconde vie. Mais lors du développement, cet ordinateur s'est révélé trop lent pour compiler le serveur rapidement. J'utilise donc maintenant un ordinateur récent, permettant des compilations en quelques secondes au lieu de plusieurs minutes.
 
-## Démonstration
+## Présentation du serveur
 
-Voici une petite démonstration des fonctionnalités présentes sur mon serveur, en utilisant un Minitel 2 d'Alcatel fabriqué en 1989, et encore parfaitement fonctionnel (Pas mal, non ? C'est français) :
+Voici une petite présentation des fonctionnalités présentes sur mon serveur, en utilisant un Minitel 2 d'Alcatel fabriqué en 1989, et encore parfaitement fonctionnel (Pas mal, non ? C'est français) :
 
-# INSÉRER VIDÉO ICI
+{{< youtube N7C6_L4qq9U >}}
 
 Le service Météo affiche la météo pour une ville en France et affiche un symbole représentant le temps avec des caractères *DRCS* (*Dynamical Redefinable Character Set*, standard permettant d'avoir 192 caractères additionnels), exclusifs au Minitel 2, offrant une meilleure résolution qu'avec le mode semi-graphique standard, mais en noir et blanc.
 

@@ -104,8 +104,16 @@ Oct 14, 2025
 <p>Le dépôt Github est disponible à cette adresse et contient l&rsquo;intégralité du projet : <a href="https://github.com/corslyn/minitel-server" target="_blank" rel="noopener">https://github.com/corslyn/minitel-server</a> </p>
 <p>Le principal &ldquo;problème&rdquo; de Rust est sa complexité en raison de la sécurité de la mémoire. C&rsquo;est pour cette raison que j&rsquo;ai décidé de développer mon serveur dans ce langage : pour progresser en programmation. Bien que la programmation soit abordée au programme du BUT en première et seconde année, je trouve qu&rsquo;on n&rsquo;en traite que les bases, sans entrer dans les détails de la sécurité. Se former en dehors du cursus permet de rester &ldquo;à jour&rdquo;.</p>
 <p>Concernant l&rsquo;ordinateur hébergeant le serveur, j&rsquo;avais initialement utilisé un ordinateur portable IBM ayant une vingtaine d&rsquo;années afin de lui donner une seconde vie. Mais lors du développement, cet ordinateur s&rsquo;est révélé trop lent pour compiler le serveur rapidement. J&rsquo;utilise donc maintenant un ordinateur récent, permettant des compilations en quelques secondes au lieu de plusieurs minutes.</p>
-<h2 id="démonstration">Démonstration</h2> <p>Voici une petite démonstration des fonctionnalités présentes sur mon serveur, en utilisant un Minitel 2 d&rsquo;Alcatel fabriqué en 1989, et encore parfaitement fonctionnel (Pas mal, non ? C&rsquo;est français) :</p>
-<h1 id="insérer-vidéo-ici">INSÉRER VIDÉO ICI</h1> <p>Le service Météo affiche la météo pour une ville en France et affiche un symbole représentant le temps avec des caractères <em>DRCS</em> (<em>Dynamical Redefinable Character Set</em>, standard permettant d&rsquo;avoir 192 caractères additionnels), exclusifs au Minitel 2, offrant une meilleure résolution qu&rsquo;avec le mode semi-graphique standard, mais en noir et blanc.</p>
+<h2 id="présentation-du-serveur">Présentation du serveur</h2> <p>Voici une petite présentation des fonctionnalités présentes sur mon serveur, en utilisant un Minitel 2 d&rsquo;Alcatel fabriqué en 1989, et encore parfaitement fonctionnel (Pas mal, non ? C&rsquo;est français) :</p>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/N7C6_L4qq9U?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+<p>Le service Météo affiche la météo pour une ville en France et affiche un symbole représentant le temps avec des caractères <em>DRCS</em> (<em>Dynamical Redefinable Character Set</em>, standard permettant d&rsquo;avoir 192 caractères additionnels), exclusifs au Minitel 2, offrant une meilleure résolution qu&rsquo;avec le mode semi-graphique standard, mais en noir et blanc.</p>
 <p><img src="../../photos/exemple_drcs.png" alt="Exemple DRCS" class="img-responsive"> 
 <em>Figure 2</em> : Exemple d&rsquo;image affichée avec des caractères DRCS (source : <a href="https://wiki.labomedia.org/images/a/ad/STUM2.pdf" target="_blank" rel="noopener">Spécifications Techniques d&rsquo;Utilisation Minitel 2</a> )</p>
 <p>L&rsquo;horoscope, quant à lui, utilise des caractères semi-graphique pour le logo du Gorafi et récupère le dernier horoscope disponible sur le site du Gorafi.</p>
