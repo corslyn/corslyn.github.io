@@ -8,7 +8,7 @@ Pendant les vacances d'été 2025, je me suis plongé dans le monde merveilleux 
 
 *Alors pourquoi acheter un Minitel en 2025 si plus rien ne fonctionne depuis plus de 10 ans ?*
 
-Tout simplement parce que des passionné.es ont refusé de laisser disparaître ce qui était jadis le fleuron de la technologie française.
+Tout simplement parce que des passionné ont refusé de laisser disparaître ce qui était jadis le fleuron de la technologie française.
 
 L'exemple le plus connu est certainement *Minipavi* (https://www.minipavi.fr), joignable soit par Internet si on ne possède pas de Minitel, soit avec un Minitel, via le réseau téléphonique public.
 
