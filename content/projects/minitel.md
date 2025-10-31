@@ -75,7 +75,7 @@ On constate bien la latence d'affichage de l'image en DRCS par rapport au semi-g
 ## Conclusion
 
 Ce projet m'a permis de développer mes compétences dans des domaines variés : téléphonie, réseaux, moyens de transmission et surtout programmation sécurisée avec Rust.  
-J'ai relevé le défi de créer un serveur Minitel presque entièrement from scratch, en conciliant technologies anciennes et savoir-faire moderne.  
+J'ai relevé le défi de créer un serveur Minitel presque entièrement de zéro, en conciliant technologies anciennes et savoir-faire moderne.  
 
 Au-delà de l'aspect technique, ce projet m'a aussi appris à planifier et organiser un projet complet, de la conception à la mise en service.  
 
