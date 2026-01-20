@@ -82,4 +82,4 @@ La mise en place de cette infrastructure m’a permis de développer considérab
 
 J’ai pu appliquer l’apprentissage critique *Mettre en œuvre des outils avancés de sécurisation d’une infrastructure réseau* grâce aux solutions de reverse proxy et à l’intégration d’Anubis, ainsi que *Surveiller l’activité du système d’information* via l’utilisation des tableaux de bord Grafana.
 
-[^1]: La *Proof of Work *(preuve de travail) est un mécanisme de vérification basé sur le calcul. Le serveur effectue une simple opération cryptographique, tandis que le client doit réaliser des milliers, voire des millions, de calculs pour trouver une réponse valide au défi.
+[^1]: La *Proof of Work* (preuve de travail) est un mécanisme de vérification basé sur le calcul. Le serveur effectue une simple opération cryptographique, tandis que le client doit réaliser des milliers, voire des millions, de calculs pour trouver une réponse valide au défi.
