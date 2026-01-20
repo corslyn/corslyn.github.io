@@ -19,7 +19,7 @@ Pendant deux jours, nous avons enchaîné plusieurs épreuves intenses :
 
 Chaque épreuve durait trois heures, et pourtant, le temps filait à une vitesse incroyable ! Les sujets étaient denses - parfois jusqu’à 12 pages chacun - et demandaient une grande concentration. De plus, nous n'avions *aucun* accès à Internet, donc pas de documentation, d'exemples ou de ChatGPT ;). À cela s’ajoutait un environnement particulier : la compétition se déroulait en plein cœur du forum des métiers, entourée de stands, de visiteurs (dont des lycéens/collégiens), et d’un brouhaha constant.  
 
-Le deuxième jour, pendant que nous étions en épreuves, les épreuves de la catégorie Cybersécurité commençaient, avec [Paul-Émile NGUYEN-TAN-HON](https://www.linkedin.com/in/paul-emile-nguyen-tan-hon-517372306/) et [Nantenaina RANDRIANASOLO.](https://www.linkedin.com/in/nantenaina-randrianasolo-2538482b9/)
+Le deuxième jour, pendant que nous étions en épreuves, les épreuves de la catégorie Cybersécurité commençaient, avec [Paul-Émile NGUYEN-TAN-HON](https://www.linkedin.com/in/paul-emile-nguyen-tan-hon-517372306/) et [Nantenaina RANDRIANASOLO.](https://blog.bouillon.run/)
 
 ![photo nous](../../photos/competiteurs.jpg)
 *Crédit photo : IUT Nord Franche-Comté*

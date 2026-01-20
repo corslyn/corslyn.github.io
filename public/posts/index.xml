@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on root@portfolio</title>
-    <link>https://corslyn.github.io/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on root@portfolio</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Mon, 13 Oct 2025 21:36:05 +0200</lastBuildDate>
-    <atom:link href="https://corslyn.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Worldskills Dijon 2025</title>
-      <link>https://corslyn.github.io/posts/worldskills/</link>
+      <link>http://localhost:1313/posts/worldskills/</link>
       <pubDate>Mon, 13 Oct 2025 21:36:05 +0200</pubDate>
-      <guid>https://corslyn.github.io/posts/worldskills/</guid>
+      <guid>http://localhost:1313/posts/worldskills/</guid>
       <description>Les 19 et 20 mars 2025, j’ai eu la chance de participer aux épreuves régionales des Worldskills, anciennement appelées Olympiades des Métiers, qui se déroulaient au Parc des Expositions de Dijon. Cet événement réunit chaque année de jeunes passionnés venus de toute la région pour mettre leurs compétences à l’épreuve dans des métiers très variés.&#xA;Pour ma part, j’ai concouru dans la catégorie Administration des Systèmes et Réseaux Informatiques, aux côtés de Ludovic GOUGEON, Étienne PAQUELET, Damien LETALLEUR, Suha KUT, ainsi qu’un étudiant de l’IUT d’Auxerre.</description>
     </item>
   </channel>
