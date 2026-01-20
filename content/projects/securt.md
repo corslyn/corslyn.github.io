@@ -12,6 +12,8 @@ Dans le cadre de la SAÉ 601 de notre troisième année en BUT Réseaux & Télé
 
 Un CTF (Capture The Flag, où dans la *lingua franca* la Capture de Drapeau) est une compétition de cybersécurité. Des joueurs s'affrontent sur des *challenges* dont l'objectif est de récupérer des *flags* (preuve de la résolution du challenge), rapportant plus ou moins de points, et l'objectif est évidemment d'obtenir le plus de points possible.
 
+Un CTF (Capture The Flag, où dans la *lingua franca* la Capture de Drapeau) est une compétition de cybersécurité au cours de laquelle des participants s’affrontent sur différents *challenges*. Chaque défi résolu permet d’obtenir un *flag* (une preuve de réussite) rapportant un certain nombre de points. L’objectif est, bien sûr, d’en accumuler le plus possible.
+
 ## Que suis-je en train de faire ?  
 
 Je travaille sur la mise en place de toute l’infrastructure nécessaire au bon déroulement de ce CTF.
@@ -30,50 +32,54 @@ Ce CTF aura lieu le 3 février à partir de 18h jusqu'à environ 22h, et la part
 
 ## L'infrastructure en elle-même
 
-Je travaille sur cette infrastructure depuis le début de l'année universitaire, et cette infrastructure n'a cessé d'évoluer en fonctionnalités, et donc en complexité. C'est pourquoi j'ai réalisé dès les premiers jours un schéma d'architecture réseau, dont voici la dernière version en date :
+Je travaille sur cette infrastructure depuis le début de l’année universitaire. Celle-ci n’a cessé d’évoluer, gagnant en fonctionnalités mais aussi en complexité. C’est pourquoi j’ai réalisé dès les premiers jours un schéma d’architecture réseau, dont voici la dernière version à ce jour :
 
 ![Schéma infrastructure](../../photos/InfraSECURT.png)
-*Figure 1* : Schéma d'architecture de l'infrastructure SecuRT
+*Figure 1* : Schéma d’architecture de l’infrastructure SecuRT
 
-En tant qu'étudiant dans le parcours Cyber, il était évident que je devais sécuriser cette infrastructure de façon cohérente. C'est pour cette raison que le serveur le plus "sensible" étant le serveur hébergeant *CTFd* (la plateforme permettant la présentation des challenges disponibles, et la validation des flags) doit être le plus sécurisé possible.
+En tant qu’étudiant du parcours Cyber, il était évident que je devais sécuriser cette infrastructure de manière cohérente. Le serveur le plus sensible est celui hébergeant CTFd - la plateforme permettant la présentation des challenges et la validation des flags -, il doit donc être protégé de façon optimale.
 
-Par exemple, pour décourager la détection de vulnérabilités sur la plateforme, j'ai mis en place un *reverse-proxy*, permettant de :  
-- sécuriser l'accès au site en HTTPS  
+Par exemple, afin de limiter la détection de vulnérabilités sur la plateforme, j’ai mis en place un reverse proxy, qui permet notamment de :
+
+- sécuriser l’accès au site en HTTPS ;
+- limiter le nombre de connexions simultanées afin d’éviter la surcharge du serveur.
 
 ![HTTPS](../../photos/https.png)
 *Figure 2* : HTTPS activé sur les sites
 
-- limiter le nombre de connexions réalisées sur le site pour éviter la surcharge sur le serveur.
-
 ![Rate limit](../../photos/rate_limit.png)
 *Figure 3* : Rejet des requêtes trop rapides
 
-Ensuite, j'ai mis en place *Anubis* (https://anubis.techaro.lol/), un programme s'interposant entre le reverse-proxy (où les personnes se connectent) et le site demandé (CTFd). Lorsqu'un utilisateur se connecte, Anubis impose aux clients un défi de *Proof of Work* [^1] exécuté côté navigateur. Ce mécanisme introduit une latence de quelques secondes pour un utilisateur légitime, mais augmente fortement le coût temporel et énergétique d’attaques d’énumération, chaque tentative nécessitant la résolution préalable d’un challenge cryptographique avant que le trafic ne soit relayé vers le service cible.
+J’ai ensuite déployé *Anubis* (https://anubis.techaro.lol/), un programme qui s’intercale entre le reverse proxy (où se connectent les utilisateurs) et le service demandé (CTFd). Lorsqu’un utilisateur tente une connexion, Anubis lui impose un défi de *Proof of Work*[^1] exécuté côté navigateur. Ce mécanisme ajoute une latence de quelques secondes pour un utilisateur légitime, mais rend beaucoup plus coûteuses - en temps et en énergie - les attaques d’énumération, chaque tentative nécessitant la résolution préalable d’un challenge cryptographique avant d’accéder au service cible.
 
 ![Anubis](../../photos/anubis.png)
-*Figure 4* : Anubis s'interposant à la connexion
+*Figure 4* : Anubis s’interposant à la connexion
 
-Avec une infrastructure aussi complexe, si un élément serait amené à ne plus fonctionner, par exemple un challenge ou un serveur, nous devons être capables de le détecter dans les plus brefs délais, afin de limiter au maximum la durée d'indisponibilité.
+Avec une infrastructure aussi complexe, toute défaillance d’un élément - challenge ou serveur, par exemple - doit être détectée le plus rapidement possible, afin de minimiser la durée d’indisponibilité.
 
-Pour cela, j'ai mis en place un serveur Grafana, que j'ai découvert à mon travail. Nous nous en servons afin de suivre la cadence de production de notre synchrone P54 (Peugeot 408). Dans mon infrastructure, je l'ai utilisé pour suivre la disponibilités des challeges :
+Pour cela, j’ai mis en place un serveur Grafana, que j’ai découvert lors de mon travail en entreprise. Dans mon environnement professionnel, il sert à suivre la cadence de production de notre synchrone P54 (Peugeot 408). Dans cette infrastructure, je l’ai utilisé pour surveiller la disponibilité des challenges :
 
 ![Grafana](../../photos/grafana.png)
-*Figure 5* : Tableau de bord des challenges (le chat porte bonheur)
+*Figure* 5 : Tableau de bord des challenges (le chat porte-bonheur)
 
-Quant aux challenges en eux-mêmes, chaque troisième année est chargé de réaliser *au moins* un challenge. Si le challenge est un simple fichier, il est rendu disponible sur l'interface CTFd :
+Concernant les challenges eux-mêmes, chaque étudiant de troisième année doit en réaliser au moins un.
+
+Si le challenge consiste en un simple fichier, celui-ci est mis à disposition sur l’interface CTFd :
 
 ![Upload CTFd](../../photos/file_ctfd.png)
-*Figure 6* : Vue d'un challenge (flouté pour éviter le *divulgâchage*), le bouton bleu permet de télécharger le fichier associé
+*Figure* 6 : Vue d’un challenge (flouté pour éviter le divulgâchage) — le bouton bleu permet de télécharger le fichier associé
 
-Si le challenge nécessite une connexion à un service (serveur web, SSH ou autre), j'ai donné pour consigne d'utiliser *Docker*, permettant de créer des conteneurs bien plus légers que des machines virtuelles, et plus simples à mettre en place. Le mode de connexion est ensuite donné dans l'énoncé :
+Si le challenge nécessite une connexion à un service (serveur web, SSH, etc.), j’ai recommandé l’utilisation de Docker. Les conteneurs offrent une alternative plus légère et plus simple à gérer que les machines virtuelles. Le mode de connexion est ensuite précisé dans l’énoncé :
 
 ![Connexion](../../photos/connect.png)
-*Figure 7* : Commande de connexion (ici SSH) utilisée pour accéder au challenge
+*Figure* 7 : Commande de connexion (ici SSH) utilisée pour accéder au challenge
 
-Pour les personnes voulant participer au CTF, mais ne pouvant pas être présents sur place, j'ai mis en place un accès à distance par VPN. Ce VPN utilise *Wireguard* (https://www.wireguard.com/), et permet des vitesses de connexions semblables à celles sans VPN.
+Pour les personnes souhaitant participer au CTF à distance, j’ai mis en place un accès VPN basé sur WireGuard (https://www.wireguard.com/), offrant des vitesses de connexion comparables à celles d’un accès direct.
 
-Cette infrastructure est actuellement en cours de finalisation, il ne me reste plus qu'à réaliser la configuration de la partie physique, ainsi que des tests complets de l'infrastructure. Je vais également solliciter des camarades de troisième année ne connaissant pas l'infrastructure pour réaliser un audit de sécurité, afin de m'assurer de la bonne sécurisation des services.
+Cette infrastructure est actuellement en phase de finalisation. Il me reste à configurer la partie physique et à effectuer une batterie complète de tests. J’ai également prévu de solliciter des camarades de troisième année, n'ayant aucune connaissance de l'infrastructure, pour réaliser un audit de sécurité afin de valider la robustesse des services.
 
-La réalisation de cette infrastructure m'a permis une drastique montée en compétences, notamment en administration système et réseaux, déjà mises à l'épreuve lors de notre dernière SAÉ en date : la *SAÉ 5.01 - Concevoir, réaliser et présenter une solution technique*. De plus, j'ai permis l'application de l'apprentissage critique *Mettre en œuvre des outils avancés de sécurisation d’une infrastructure du réseau* en utilisant des solutions de reverse-proxy ou encore Anubis. L'apprentissage critique *Surveiller l’activité du système d’information* est également appliqué, grâce aux tableaux de bord Grafana.
+La mise en place de cette infrastructure m’a permis de développer considérablement mes compétences en administration système et réseau, déjà mobilisées lors de notre dernière SAÉ : la *SAÉ 5.01 — Concevoir, réaliser et présenter une solution technique*.
 
-[^1]: La *Proof of Work* (preuve de travail) est un test de calcul. Le serveur n'a qu'un calcul cryptographique à réaliser, tandis que le client doit réaliser des milliers voire des millions de calculs pour trouver la réponse au test.
+J’ai pu appliquer l’apprentissage critique *Mettre en œuvre des outils avancés de sécurisation d’une infrastructure réseau* grâce aux solutions de reverse proxy et à l’intégration d’Anubis, ainsi que *Surveiller l’activité du système d’information* via l’utilisation des tableaux de bord Grafana.
+
+[^1]: La *Proof of Work *(preuve de travail) est un mécanisme de vérification basé sur le calcul. Le serveur effectue une simple opération cryptographique, tandis que le client doit réaliser des milliers, voire des millions, de calculs pour trouver une réponse valide au défi.
