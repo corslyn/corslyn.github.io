@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on root@portfolio</title>
-    <link>http://localhost:45145/posts/</link>
+    <link>http://localhost:38029/posts/</link>
     <description>Recent content in Posts on root@portfolio</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Wed, 21 Jan 2026 08:13:56 +0100</lastBuildDate>
-    <atom:link href="http://localhost:45145/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:38029/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rayonnements de Van Eck</title>
-      <link>http://localhost:45145/posts/vaneck/</link>
+      <link>http://localhost:38029/posts/vaneck/</link>
       <pubDate>Wed, 21 Jan 2026 08:13:56 +0100</pubDate>
-      <guid>http://localhost:45145/posts/vaneck/</guid>
+      <guid>http://localhost:38029/posts/vaneck/</guid>
       <description>Est-ce que vous saviez qu’il est possible d’espionner des écrans d’ordinateur sans réseau, sans les toucher et même sans être devant ? C&amp;rsquo;est ce qui s&amp;rsquo;appelle le Van Eck phreaking (dans la langue de Molière le rayonnement de Van Eck). Cette technique, connue par les États-Unis et Bell Labs depuis la Seconde Guerre Mondiale, repose sur le fait que puisqu&amp;rsquo;un signal électrique dans un fil produit un champ magnétique (loi d&amp;rsquo;Ampère), alors le fil (câble vidéo) se comporte comme une antenne.</description>
     </item>
     <item>
       <title>La cryptographie à courbes elliptiques</title>
-      <link>http://localhost:45145/posts/ecc/</link>
+      <link>http://localhost:38029/posts/ecc/</link>
       <pubDate>Tue, 14 Oct 2025 21:30:26 +0200</pubDate>
-      <guid>http://localhost:45145/posts/ecc/</guid>
-      <description>La cryptographie est omniprésente sur Internet. Sans elle, pas de sécurisation des connexions, et n&amp;rsquo;importe qui pourrait voir ce que l&amp;rsquo;on fait sur Internet.&#xA;Aujourd&amp;rsquo;hui la cryptographie recommandée est l&amp;rsquo;ECC (Elliptic Curve Cryptography), qui se base sur des fonctions mathématiques spéciales : les courbes elliptiques.&#xA;Qu&amp;rsquo;est ce qu&amp;rsquo;une courbe elliptique ? Une courbe elliptique est une fonction mathématique particulière où :&#xA;on choisit un point de départ sur la courbe, appelé point générateur \(G\) (donnée publique) on peut additionner des points entre eux selon des règles bien définies on peut répéter cette opération plusieurs fois (additionner un point avec lui-même) Le plus intéressant dans ces courbes est le fait qu&amp;rsquo;il est très simple d&amp;rsquo;additioner des points, mais presque impossible de revenir en arrière.</description>
+      <guid>http://localhost:38029/posts/ecc/</guid>
+      <description>La cryptographie est omniprésente sur Internet. Sans elle, pas de sécurisation des connexions, et n&amp;rsquo;importe qui pourrait voir ce que l&amp;rsquo;on fait sur Internet.&#xA;Aujourd&amp;rsquo;hui la cryptographie recommandée est l&amp;rsquo;ECC (Elliptic Curve Cryptography), qui se base sur des fonctions mathématiques spéciales : les courbes elliptiques.&#xA;Qu&amp;rsquo;est ce qu&amp;rsquo;une courbe elliptique ? Figure 1: Courbe elliptique ayant pour équation \(y^2 = x^3 - x + 1\) - Crédit : Cloudflare&#xA;Une courbe elliptique est une fonction mathématique particulière où :</description>
     </item>
     <item>
       <title>Worldskills Dijon 2025</title>
-      <link>http://localhost:45145/posts/worldskills/</link>
+      <link>http://localhost:38029/posts/worldskills/</link>
       <pubDate>Mon, 13 Oct 2025 21:36:05 +0200</pubDate>
-      <guid>http://localhost:45145/posts/worldskills/</guid>
+      <guid>http://localhost:38029/posts/worldskills/</guid>
       <description>Les 19 et 20 mars 2025, j’ai eu la chance de participer aux épreuves régionales des Worldskills, anciennement appelées Olympiades des Métiers, qui se déroulaient au Parc des Expositions de Dijon. Cet événement réunit chaque année de jeunes passionnés venus de toute la région pour mettre leurs compétences à l’épreuve dans des métiers très variés.&#xA;Pour ma part, j’ai concouru dans la catégorie Administration des Systèmes et Réseaux Informatiques, aux côtés de Ludovic GOUGEON, Étienne PAQUELET, Damien LETALLEUR, Suha KUT, ainsi qu’un étudiant de l’IUT d’Auxerre.</description>
     </item>
   </channel>

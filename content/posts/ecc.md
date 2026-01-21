@@ -12,11 +12,17 @@ Aujourd'hui la cryptographie recommandée est l'*ECC* (*Elliptic Curve Cryptogra
 
 ## Qu'est ce qu'une courbe elliptique ?
 
+![EC](../../photos/ec.png)
+*Figure 1*: Courbe elliptique ayant pour équation \(y^2 = x^3 - x + 1\) - Crédit : Cloudflare
+
 Une courbe elliptique est une fonction mathématique particulière où :
 
 - on choisit un point de départ sur la courbe, appelé point générateur \(G\) (donnée publique)
 - on peut additionner des points entre eux selon des règles bien définies
 - on peut répéter cette opération plusieurs fois (additionner un point avec lui-même)
+
+![Operations](../../photos/ecc_operations.png)
+*Figure 2*: Opérations possibles sur une courbe elliptique - Crédit : SuperManu, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons
 
 Le plus intéressant dans ces courbes est le fait qu'il est très simple d'additioner des points, mais presque impossible de revenir en arrière.
 
