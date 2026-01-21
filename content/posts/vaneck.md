@@ -52,7 +52,7 @@ On affiche la vidéo en plein écran, et on passe sur SDRconnect. On définit la
 
 Et bingo, on entend la musique :
 
-<audio controls><source src="../../../assets/musique.mp3" type="audio/mpeg"></audio>
+<audio controls><source src="../../musique.mp3" type="audio/mpeg"></audio>
 
 Écouter de la musique (de mauvaise qualité) par radio, c’est très bien, mais ce que l’on veut réellement c’est voir notre écran (sans le voir )... Pour cela, j’utilise TempestSDR (https://github.com/martinmarinov/TempestSDR). Un logiciel développé par Martin Marinov lors de sa thèse de *Master of Philosophy in Advanced Computer Science*, à l’Université de Cambridge.
 
