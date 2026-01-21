@@ -2,10 +2,21 @@ baseURL = 'https://corslyn.github.io/'
 languageCode = 'fr-fr'
 title = 'root@portfolio'
 theme = 'hugo-theme-console'
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
 
 [params]
   description = "Enzo MANZINALI - Portfolio"
   animateStyle = "animate-fade-up" # Animation style for content
+  math = true
 
 [[params.navlinks]]
   name = "About"

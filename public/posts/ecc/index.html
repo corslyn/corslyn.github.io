@@ -19,7 +19,7 @@
     
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>root@portfolio/posts/breaking-ecdsa/</title>
+    <title>root@portfolio/posts/ecc/</title>
     <meta name="description" content="Enzo MANZINALI - Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
@@ -35,7 +35,7 @@
        <meta property="og:title" content="La cryptographie à courbes elliptiques" />
 <meta property="og:description" content="Enzo MANZINALI - Portfolio" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://192.168.1.175:1313/posts/breaking-ecdsa/" /><meta property="article:published_time" content="2025-10-14T21:30:26+02:00" />
+<meta property="og:url" content="http://192.168.1.175:1313/posts/ecc/" /><meta property="article:published_time" content="2025-10-14T21:30:26+02:00" />
 
 
 
@@ -43,7 +43,7 @@
 <meta name="twitter:description" content="La cryptographie est omniprésente sur Internet. Sans elle, pas de sécurisation des connexions, et n&rsquo;importe qui pourrait voir ce que l&rsquo;on fait sur Internet.
 Aujourd&rsquo;hui la cryptographie recommandée est l&rsquo;ECC (Elliptic Curve Cryptography), qui se base sur des fonctions mathématiques spéciales : les courbes elliptiques.
 Qu&rsquo;est ce qu&rsquo;une courbe elliptique ? Une courbe elliptique est une fonction mathématique particulière où :
-on choisit un point de départ sur la courbes on peut additionner des points entre eux selon des règles bien définies on peut répéter cette opération plusieurs fois (additionner un point avec lui-même) Le plus intéressant dans ces courbes est le fait qu&rsquo;il est très simple d&rsquo;additioner des points, mais presque impossible de revenir en arrière."/>
+on choisit un point de départ sur la courbe, appelé point générateur \(G\) (donnée publique) on peut additionner des points entre eux selon des règles bien définies on peut répéter cette opération plusieurs fois (additionner un point avec lui-même) Le plus intéressant dans ces courbes est le fait qu&rsquo;il est très simple d&rsquo;additioner des points, mais presque impossible de revenir en arrière."/>
 
   
 
@@ -57,7 +57,7 @@ on choisit un point de départ sur la courbes on peut additionner des points ent
               
               
               <a href="http://192.168.1.175:1313/" class="no-style ">root@portfolio</a>:~# 
-              <a href='http://192.168.1.175:1313/posts'>posts</a>/<a href='http://192.168.1.175:1313/posts/breaking-ecdsa'>breaking-ecdsa</a>/</div></header>
+              <a href='http://192.168.1.175:1313/posts'>posts</a>/<a href='http://192.168.1.175:1313/posts/ecc'>ecc</a>/</div></header>
           <nav class="terminal-menu">
             <ul vocab="https://schema.org/" typeof="BreadcrumbList">
                 
@@ -102,13 +102,32 @@ Oct 14, 2025
 <p>Aujourd&rsquo;hui la cryptographie recommandée est l&rsquo;<em>ECC</em> (<em>Elliptic Curve Cryptography</em>), qui se base sur des fonctions mathématiques spéciales : les courbes elliptiques.</p>
 <h2 id="quest-ce-quune-courbe-elliptique-">Qu&rsquo;est ce qu&rsquo;une courbe elliptique ?</h2> <p>Une courbe elliptique est une fonction mathématique particulière où :</p>
 <ul>
-<li>on choisit un point de départ sur la courbes</li>
+<li>on choisit un point de départ sur la courbe, appelé point générateur \(G\) (donnée publique)</li>
 <li>on peut additionner des points entre eux selon des règles bien définies</li>
 <li>on peut répéter cette opération plusieurs fois (additionner un point avec lui-même)</li>
 </ul>
 <p>Le plus intéressant dans ces courbes est le fait qu&rsquo;il est très simple d&rsquo;additioner des points, mais presque impossible de revenir en arrière.</p>
+<p>Cette propriété est appelé le <em>problème du logarithme discret sur les courbes elliptiques</em>, et est la base de la sécurité de l&rsquo;ECC.</p>
 <p>Autrement dit, si on connait le point de départ et le résultat final, on ne peut pas savoir combien de fois l&rsquo;opération a été faite.</p>
-<h2 id="pourquoi-utiliser-les-courbes-elliptiques">Pourquoi utiliser les courbes elliptiques</h2> <p>Historiquement, pour sécu</p>
+<h2 id="pourquoi-utiliser-les-courbes-elliptiques">Pourquoi utiliser les courbes elliptiques</h2> <p>Historiquement, pour sécuriser le trafic internet en HTTPS, le chiffrement RSA<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> était et est encore utilisé par soucis de compatibilité avec les systèmes plus anciens.</p>
+<p>Cependant, les algorithmes basés sur les courbes elliptiques présentent plusieurs avantages majeurs :</p>
+<ul>
+<li>des clés beaucoup plus courtes pour un niveau de sécurité équivalent (par exemple, une clé ECC de 256 bits ≈ une clé RSA de 3072 bits)</li>
+<li>des calculs plus rapides</li>
+<li>moins de données échangées lors de l’établissement d’une connexion sécurisée</li>
+<li>une meilleure efficacité sur les systèmes contraints (mobiles, objets connectés)</li>
+</ul>
+<p>C’est pourquoi les protocoles modernes (TLS, signatures numériques, cryptomonnaies, etc.) privilégient aujourd’hui l’utilisation de l’ECC.</p>
+<p>Les signatures numériques peuvent également utiliser les courbes elliptiques, c&rsquo;est le cas de <em>ECDSA</em> (Elliptic Curve Digital Signature Algorithm). ECDSA est notamment utilisé dans les cryptomonnaies afin de s&rsquo;assurer que la transaction émise provienne bien du bon débiteur. Sinon, quelqu&rsquo;un pourrait se faire passer pour quelqu&rsquo;un d&rsquo;autre et effectuer des transactions à son insu&hellip;</p>
+<p>Cependant, comme tout système, ECDSA peut présenter des vulnérabilités si son algorithme est mal implémenté. En effet, ECDSA se base sur un nombre généré aléatoirement (\(k\)) à chaque signature. Sinon, avec uniquement deux signatures, il est possible de calculer la clé privée, et donc de pouvoir signer des messages en se faisant passé pour quelqu&rsquo;un d&rsquo;autre. C&rsquo;est ce qu&rsquo;il s&rsquo;est passé sur la PlayStation 3, où l&rsquo;implémentation de Sony utilisait un \(k\) statique, ce qui a permis à des hackers de pouvoir exécuter Linux sur la console (le <em>jailbreak</em>).</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><em>Rivest Shamir Adleman</em>, algorithme de chiffrement basé sur la difficulté de la factorisation de très grands nombres entiers (environ 600 chiffres)&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
 
 
 

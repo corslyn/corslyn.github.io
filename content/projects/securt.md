@@ -10,8 +10,6 @@ Dans le cadre de la SAÉ 601 de notre troisième année en BUT Réseaux & Télé
 
 ## Qu'est-ce qu'un CTF ?
 
-Un CTF (Capture The Flag, où dans la *lingua franca* la Capture de Drapeau) est une compétition de cybersécurité. Des joueurs s'affrontent sur des *challenges* dont l'objectif est de récupérer des *flags* (preuve de la résolution du challenge), rapportant plus ou moins de points, et l'objectif est évidemment d'obtenir le plus de points possible.
-
 Un CTF (Capture The Flag, où dans la *lingua franca* la Capture de Drapeau) est une compétition de cybersécurité au cours de laquelle des participants s’affrontent sur différents *challenges*. Chaque défi résolu permet d’obtenir un *flag* (une preuve de réussite) rapportant un certain nombre de points. L’objectif est, bien sûr, d’en accumuler le plus possible.
 
 ## Que suis-je en train de faire ?  
