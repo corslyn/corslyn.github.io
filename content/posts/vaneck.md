@@ -28,7 +28,7 @@ Curieux de tester l'efficacité de l'écoute, j'y ai pris part avec mon propre m
 - un récepteur SDRplay RSP1B
 
 ![recepteur](../../photos/sdrplay.png)
-Crédit image : www.passion-radio.fr
+*Figure 1* : Récepteur SDR - Crédit image : www.passion-radio.fr
 - Et évidemment, un ordinateur
 
 Au niveau logiciel, j’ai utilisé :
@@ -49,6 +49,7 @@ On peut désormais tester si la réception se fait correctement. Pour cela j’a
 On affiche la vidéo en plein écran, et on passe sur SDRconnect. On définit la fréquence à 138MHz…
 
 ![sdrconnect](../../photos/sdrconnect.png)
+*Figure 2* : Vue du logiciel SDRconnect
 
 Et bingo, on entend la musique :
 
