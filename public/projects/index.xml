@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on root@portfolio</title>
-    <link>http://localhost:43675/projects/</link>
+    <link>http://localhost:46549/projects/</link>
     <description>Recent content in Projects on root@portfolio</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Tue, 14 Oct 2025 21:39:48 +0200</lastBuildDate>
-    <atom:link href="http://localhost:43675/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:46549/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Serveur Minitel</title>
-      <link>http://localhost:43675/projects/minitel/</link>
+      <link>http://localhost:46549/projects/minitel/</link>
       <pubDate>Tue, 14 Oct 2025 21:39:48 +0200</pubDate>
-      <guid>http://localhost:43675/projects/minitel/</guid>
+      <guid>http://localhost:46549/projects/minitel/</guid>
       <description>Pendant les vacances d&amp;rsquo;été 2025, je me suis plongé dans le monde merveilleux de la téléphonie analogique. Entre les modems, les connexions 56k (connexion via ligne téléphonique à 56kbit/s, qui date d&amp;rsquo;avant l&amp;rsquo;ADSL) et les BBS (Bulletin Board System, des serveurs permettant l&amp;rsquo;échange de messages, d&amp;rsquo;informations, datant d&amp;rsquo;avant Internet), j&amp;rsquo;ai eu l&amp;rsquo;idée quelque peu saugrenue d&amp;rsquo;acheter un Minitel. Vous savez, cet écran glorifié qui pèse presque 5 kilos et qui a plus de 50 ans&amp;hellip; À son époque, c&amp;rsquo;était la pointe de la technologie française (oui oui française), mais France Télécom a débranché les derniers services en 2012, faute d&amp;rsquo;utilisateurs.</description>
     </item>
     <item>
       <title>SecuRT 2026</title>
-      <link>http://localhost:43675/projects/securt/</link>
+      <link>http://localhost:46549/projects/securt/</link>
       <pubDate>Sun, 12 Oct 2025 19:01:38 +0200</pubDate>
-      <guid>http://localhost:43675/projects/securt/</guid>
+      <guid>http://localhost:46549/projects/securt/</guid>
       <description>Remise en contexte Dans le cadre de la SAÉ 601 de notre troisième année en BUT Réseaux &amp;amp; Télécoms - parcours Cybersécurité - nous avons pour mission d&amp;rsquo;organiser la troisième édition du CTF SecuRT à destination des étudiants de première et deuxième année intéressés par la cybersécurité.&#xA;Qu&amp;rsquo;est-ce qu&amp;rsquo;un CTF ? Un CTF (Capture The Flag, où dans la lingua franca la Capture de Drapeau) est une compétition de cybersécurité au cours de laquelle des participants s’affrontent sur différents challenges.</description>
     </item>
   </channel>

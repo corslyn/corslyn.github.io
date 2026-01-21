@@ -2,45 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>root@portfolio</title>
-    <link>http://localhost:43675/</link>
+    <link>http://localhost:46549/</link>
     <description>Recent content on root@portfolio</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Wed, 21 Jan 2026 08:13:56 +0100</lastBuildDate>
-    <atom:link href="http://localhost:43675/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:46549/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rayonnements de Van Eck</title>
-      <link>http://localhost:43675/posts/vaneck/</link>
+      <link>http://localhost:46549/posts/vaneck/</link>
       <pubDate>Wed, 21 Jan 2026 08:13:56 +0100</pubDate>
-      <guid>http://localhost:43675/posts/vaneck/</guid>
+      <guid>http://localhost:46549/posts/vaneck/</guid>
       <description>Est-ce que vous saviez qu’il est possible d’espionner des écrans d’ordinateur sans réseau, sans les toucher et même sans être devant ? C&amp;rsquo;est ce qui s&amp;rsquo;appelle le Van Eck phreaking (dans la langue de Molière le rayonnement de Van Eck). Cette technique, connue par les États-Unis et Bell Labs depuis la Seconde Guerre Mondiale, repose sur le fait que puisqu&amp;rsquo;un signal électrique dans un fil produit un champ magnétique (loi d&amp;rsquo;Ampère), alors le fil (câble vidéo) se comporte comme une antenne.</description>
     </item>
     <item>
       <title>Serveur Minitel</title>
-      <link>http://localhost:43675/projects/minitel/</link>
+      <link>http://localhost:46549/projects/minitel/</link>
       <pubDate>Tue, 14 Oct 2025 21:39:48 +0200</pubDate>
-      <guid>http://localhost:43675/projects/minitel/</guid>
+      <guid>http://localhost:46549/projects/minitel/</guid>
       <description>Pendant les vacances d&amp;rsquo;été 2025, je me suis plongé dans le monde merveilleux de la téléphonie analogique. Entre les modems, les connexions 56k (connexion via ligne téléphonique à 56kbit/s, qui date d&amp;rsquo;avant l&amp;rsquo;ADSL) et les BBS (Bulletin Board System, des serveurs permettant l&amp;rsquo;échange de messages, d&amp;rsquo;informations, datant d&amp;rsquo;avant Internet), j&amp;rsquo;ai eu l&amp;rsquo;idée quelque peu saugrenue d&amp;rsquo;acheter un Minitel. Vous savez, cet écran glorifié qui pèse presque 5 kilos et qui a plus de 50 ans&amp;hellip; À son époque, c&amp;rsquo;était la pointe de la technologie française (oui oui française), mais France Télécom a débranché les derniers services en 2012, faute d&amp;rsquo;utilisateurs.</description>
     </item>
     <item>
+      <title>La cryptographie à courbes elliptiques</title>
+      <link>http://localhost:46549/posts/ecc/</link>
+      <pubDate>Tue, 14 Oct 2025 21:30:26 +0200</pubDate>
+      <guid>http://localhost:46549/posts/ecc/</guid>
+      <description>La cryptographie est omniprésente sur Internet. Sans elle, pas de sécurisation des connexions, et n&amp;rsquo;importe qui pourrait voir ce que l&amp;rsquo;on fait sur Internet.&#xA;Aujourd&amp;rsquo;hui la cryptographie recommandée est l&amp;rsquo;ECC (Elliptic Curve Cryptography), qui se base sur des fonctions mathématiques spéciales : les courbes elliptiques.&#xA;Qu&amp;rsquo;est ce qu&amp;rsquo;une courbe elliptique ? Une courbe elliptique est une fonction mathématique particulière où :&#xA;on choisit un point de départ sur la courbe, appelé point générateur \(G\) (donnée publique) on peut additionner des points entre eux selon des règles bien définies on peut répéter cette opération plusieurs fois (additionner un point avec lui-même) Le plus intéressant dans ces courbes est le fait qu&amp;rsquo;il est très simple d&amp;rsquo;additioner des points, mais presque impossible de revenir en arrière.</description>
+    </item>
+    <item>
       <title>Worldskills Dijon 2025</title>
-      <link>http://localhost:43675/posts/worldskills/</link>
+      <link>http://localhost:46549/posts/worldskills/</link>
       <pubDate>Mon, 13 Oct 2025 21:36:05 +0200</pubDate>
-      <guid>http://localhost:43675/posts/worldskills/</guid>
+      <guid>http://localhost:46549/posts/worldskills/</guid>
       <description>Les 19 et 20 mars 2025, j’ai eu la chance de participer aux épreuves régionales des Worldskills, anciennement appelées Olympiades des Métiers, qui se déroulaient au Parc des Expositions de Dijon. Cet événement réunit chaque année de jeunes passionnés venus de toute la région pour mettre leurs compétences à l’épreuve dans des métiers très variés.&#xA;Pour ma part, j’ai concouru dans la catégorie Administration des Systèmes et Réseaux Informatiques, aux côtés de Ludovic GOUGEON, Étienne PAQUELET, Damien LETALLEUR, Suha KUT, ainsi qu’un étudiant de l’IUT d’Auxerre.</description>
     </item>
     <item>
       <title>SecuRT 2026</title>
-      <link>http://localhost:43675/projects/securt/</link>
+      <link>http://localhost:46549/projects/securt/</link>
       <pubDate>Sun, 12 Oct 2025 19:01:38 +0200</pubDate>
-      <guid>http://localhost:43675/projects/securt/</guid>
+      <guid>http://localhost:46549/projects/securt/</guid>
       <description>Remise en contexte Dans le cadre de la SAÉ 601 de notre troisième année en BUT Réseaux &amp;amp; Télécoms - parcours Cybersécurité - nous avons pour mission d&amp;rsquo;organiser la troisième édition du CTF SecuRT à destination des étudiants de première et deuxième année intéressés par la cybersécurité.&#xA;Qu&amp;rsquo;est-ce qu&amp;rsquo;un CTF ? Un CTF (Capture The Flag, où dans la lingua franca la Capture de Drapeau) est une compétition de cybersécurité au cours de laquelle des participants s’affrontent sur différents challenges.</description>
     </item>
     <item>
       <title>About</title>
-      <link>http://localhost:43675/about/</link>
+      <link>http://localhost:46549/about/</link>
       <pubDate>Sun, 12 Oct 2025 18:57:49 +0200</pubDate>
-      <guid>http://localhost:43675/about/</guid>
+      <guid>http://localhost:46549/about/</guid>
       <description>My name is Enzo MANZINALI, I&amp;rsquo;m currently 21 years old, and I&amp;rsquo;m studying at the Marie &amp;amp; Louis Pasteur University, more precisely at the IUT of Montbéliard where I&amp;rsquo;m pursuing a Bachelor&amp;rsquo;s degree in Network &amp;amp; Telecoms.</description>
     </item>
   </channel>

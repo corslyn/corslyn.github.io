@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on root@portfolio</title>
-    <link>http://localhost:43675/tags/</link>
+    <link>http://localhost:46549/tags/</link>
     <description>Recent content in Tags on root@portfolio</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
-    <atom:link href="http://localhost:43675/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:46549/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

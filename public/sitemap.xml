@@ -4,69 +4,76 @@
     
         
         <url>
-            <loc>http://localhost:43675/posts/</loc>
+            <loc>http://localhost:46549/posts/</loc>
             <lastmod>2026-01-21T08:13:56+01:00</lastmod>
         </url>
         
     
         
         <url>
-            <loc>http://localhost:43675/posts/vaneck/</loc>
+            <loc>http://localhost:46549/posts/vaneck/</loc>
             <lastmod>2026-01-21T08:13:56+01:00</lastmod>
         </url>
         
     
         
         <url>
-            <loc>http://localhost:43675/</loc>
+            <loc>http://localhost:46549/</loc>
             <lastmod>2026-01-21T08:13:56+01:00</lastmod>
         </url>
         
     
         
         <url>
-            <loc>http://localhost:43675/projects/</loc>
+            <loc>http://localhost:46549/projects/</loc>
             <lastmod>2025-10-14T21:39:48+02:00</lastmod>
         </url>
         
     
         
         <url>
-            <loc>http://localhost:43675/projects/minitel/</loc>
+            <loc>http://localhost:46549/projects/minitel/</loc>
             <lastmod>2025-10-14T21:39:48+02:00</lastmod>
         </url>
         
     
         
         <url>
-            <loc>http://localhost:43675/posts/worldskills/</loc>
+            <loc>http://localhost:46549/posts/ecc/</loc>
+            <lastmod>2025-10-14T21:30:26+02:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://localhost:46549/posts/worldskills/</loc>
             <lastmod>2025-10-13T21:36:05+02:00</lastmod>
         </url>
         
     
         
         <url>
-            <loc>http://localhost:43675/projects/securt/</loc>
+            <loc>http://localhost:46549/projects/securt/</loc>
             <lastmod>2025-10-12T19:01:38+02:00</lastmod>
         </url>
         
     
         
         <url>
-            <loc>http://localhost:43675/about/</loc>
+            <loc>http://localhost:46549/about/</loc>
             <lastmod>2025-10-12T18:57:49+02:00</lastmod>
         </url>
         
     
         
         <url>
-            <loc>http://localhost:43675/categories/</loc>
+            <loc>http://localhost:46549/categories/</loc>
         </url>
         
     
         
         <url>
-            <loc>http://localhost:43675/tags/</loc>
+            <loc>http://localhost:46549/tags/</loc>
         </url>
         
     
