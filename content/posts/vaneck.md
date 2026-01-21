@@ -45,6 +45,7 @@ En se servant d’un site comme https://tomverbeure.github.io/video_timings_calc
 On peut désormais tester si la réception se fait correctement. Pour cela j’ai utilisé cette vidéo (récupérée sur https://github.com/eried/Research/blob/master/HackRF/TempestSDR/tempest_test_elize_song.mp4). Cette vidéo a la particularité, lorsqu’elle est "écoutée" par radio (c'est à dire quand on positionne son recepteur en face de l'écran), de jouer de la musique.
 
 <video width=100% controls><source src="https://github.com/eried/Research/raw/refs/heads/master/HackRF/TempestSDR/tempest_test_elize_song.mp4"></audio>
+*Vidéo 1* : Vidéo jouant de la musique en passant une radio devant l'écran
 
 On affiche la vidéo en plein écran, et on passe sur SDRconnect. On définit la fréquence à 138MHz…
 
@@ -54,6 +55,7 @@ On affiche la vidéo en plein écran, et on passe sur SDRconnect. On définit la
 Et bingo, on entend la musique :
 
 <audio controls><source src="../../musique.mp3" type="audio/mpeg"></audio>
+*Audio 1*: Son obtenu après démodulation du signal radio
 
 Écouter de la musique (de mauvaise qualité) par radio, c’est très bien, mais ce que l’on veut réellement c’est voir notre écran (sans le voir )... Pour cela, j’utilise TempestSDR (https://github.com/martinmarinov/TempestSDR). Un logiciel développé par Martin Marinov lors de sa thèse de *Master of Philosophy in Advanced Computer Science*, à l’Université de Cambridge.
 
