@@ -22,7 +22,7 @@ Une courbe elliptique est une fonction mathématique particulière où :
 - on peut répéter cette opération plusieurs fois (additionner un point avec lui-même)
 
 ![Operations](../../photos/ecc_operations.png)
-*Figure 2*: Opérations possibles sur une courbe elliptique - Crédit : SuperManu, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons
+*Figure 2*: Opérations possibles sur une courbe elliptique - Crédit : SuperManu, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons
 
 Le plus intéressant dans ces courbes est le fait qu'il est très simple d'additioner des points, mais presque impossible de revenir en arrière.
 
@@ -43,9 +43,17 @@ Cependant, les algorithmes basés sur les courbes elliptiques présentent plusie
 
 C’est pourquoi les protocoles modernes (TLS, signatures numériques, cryptomonnaies, etc.) privilégient aujourd’hui l’utilisation de l’ECC.
 
-Les signatures numériques peuvent également utiliser les courbes elliptiques, c'est le cas de *ECDSA* (Elliptic Curve Digital Signature Algorithm). ECDSA est notamment utilisé dans les cryptomonnaies afin de s'assurer que la transaction émise provienne bien du bon débiteur. Sinon, quelqu'un pourrait se faire passer pour quelqu'un d'autre et effectuer des transactions à son insu...
+## Les signatures numériques
 
-Cependant, comme tout système, ECDSA peut présenter des vulnérabilités si son algorithme est mal implémenté. En effet, ECDSA se base sur un nombre généré aléatoirement (\(k\)) à chaque signature. Sinon, avec uniquement deux signatures, il est possible de calculer la clé privée, et donc de pouvoir signer des messages en se faisant passé pour quelqu'un d'autre. C'est ce qu'il s'est passé sur la PlayStation 3, où l'implémentation de Sony utilisait un \(k\) statique, ce qui a permis à des hackers de pouvoir exécuter Linux sur la console (le *jailbreak*).
+Les courbes elliptiques ne servent pas qu’au chiffrement : elles permettent aussi de signer des messages. C’est le principe de l’*ECDSA* (*Elliptic Curve Digital Signature Algorithm*).
+
+Dans les cryptomonnaies, par exemple, ECDSA garantit qu’une transaction a bien été émise par son véritable propriétaire. Sans ce mécanisme, il serait possible d’usurper une identité et d’effectuer des transferts frauduleux.
+
+Comme souvent en sécurité, la solidité du concept ne suffit pas : tout dépend aussi de la mise en œuvre. ECDSA repose sur un nombre aléatoire \(k\), différent à chaque signature. Si ce nombre est réutilisé ou mal généré, la clé privée peut être retrouvée à partir de seulement deux (2!) signatures.
+
+Ce type d’erreur a déjà existé. Sur la *PlayStation 3*, par exemple, Sony utilisait un \(k\) statique dans son implémentation d’ECDSA. Les chercheurs ont alors pu retrouver la clé privée, ce qui a conduit au célèbre *jailbreak* permettant d’exécuter d’autres systèmes sur la console.
+
+Lors de mes participations à des CTF, j'ai remarqué que je n'ai rencontré **aucun** challenge portant sur l'ECC... C'est pourquoi j'ai décidé, pour le CTF SecuRT 2026 (https://corslyn.github.io/projects/securt), de réaliser un challenge où les personnes devront falsifier des signatures...
 
 [^1]: *Rivest Shamir Adleman*, algorithme de chiffrement basé sur la difficulté de la factorisation de très grands nombres entiers (environ 600 chiffres)
 
