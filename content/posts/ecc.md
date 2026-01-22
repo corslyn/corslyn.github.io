@@ -51,9 +51,11 @@ Dans les cryptomonnaies, par exemple, ECDSA garantit qu’une transaction a bien
 
 Comme souvent en sécurité, la solidité du concept ne suffit pas : tout dépend aussi de la mise en œuvre. ECDSA repose sur un nombre aléatoire \(k\), différent à chaque signature. Si ce nombre est réutilisé ou mal généré, la clé privée peut être retrouvée à partir de seulement deux (2!) signatures.
 
-Ce type d’erreur a déjà existé. Sur la *PlayStation 3*, par exemple, Sony utilisait un \(k\) statique dans son implémentation d’ECDSA. Les chercheurs ont alors pu retrouver la clé privée, ce qui a conduit au célèbre *jailbreak* permettant d’exécuter d’autres systèmes sur la console.
+Ce type d’erreur a déjà existé. Sur la *PlayStation 3*, par exemple, Sony utilisait un \(k\) statique dans son implémentation d’ECDSA. Des hackers ont alors pu retrouver la clé privée, ce qui a conduit au célèbre *jailbreak* permettant d’exécuter d’autres systèmes sur la console.
 
 Lors de mes participations à des CTF, j'ai remarqué que je n'ai rencontré **aucun** challenge portant sur l'ECC... C'est pourquoi j'ai décidé, pour le CTF SecuRT 2026 (https://corslyn.github.io/projects/securt), de réaliser un challenge où les personnes devront falsifier des signatures...
+
+L'exploration de ce domaine de la cryptographie m'a permis de développer les *Apprentissages Critiques* (des sous-compétences permettant de valider des sous-compétences) du BUT Réseaux & Télécommunications. En particulier l'AC *Choisir les outils cryptographiques adaptés au besoin fonctionnel du système d’information* ainsi que l'AC *Comprendre des documents techniques en anglais*.
 
 [^1]: *Rivest Shamir Adleman*, algorithme de chiffrement basé sur la difficulté de la factorisation de très grands nombres entiers (environ 600 chiffres)
 
