@@ -26,7 +26,7 @@ Et quand on parle d’infrastructure, on parle de **TOUTE** l’infrastructure :
 - La sécurisation de l’infrastructure (HTTPS, pare-feu, VPN)
 - Les besoins spécifiques pour certains challenges
 
-Ce CTF aura lieu le 3 février à partir de 18h jusqu'à environ 22h, et la participation sera **obligatoire** pour les premières années souhaitant s'inscrire au parcours Cyber en deuxième année afin de prouver leur intérêt dans le parcours.
+Ce CTF aura lieu le 3 février à partir de 18h jusqu'à environ 23h, et la participation sera **obligatoire** pour les premières années souhaitant s'inscrire au parcours Cyber en deuxième année afin de prouver leur intérêt dans le parcours.
 
 ## L'infrastructure en elle-même
 
@@ -74,7 +74,7 @@ Si le challenge nécessite une connexion à un service (serveur web, SSH, etc.),
 
 Pour les personnes souhaitant participer au CTF à distance, j’ai mis en place un accès VPN basé sur WireGuard (https://www.wireguard.com/), offrant des vitesses de connexion comparables à celles d’un accès direct.
 
-Cette infrastructure est actuellement en phase de finalisation. Il me reste à configurer la partie physique et à effectuer une batterie complète de tests. J’ai également prévu de solliciter des camarades de troisième année, n'ayant aucune connaissance de l'infrastructure, pour réaliser un audit de sécurité afin de valider la robustesse des services.
+Cette infrastructure est actuellement en phase de finalisation. Il reste à effectuer une batterie complète de tests afin de verifier le bon fonctionnement. J’ai également prévu de solliciter des camarades de troisième année, n'ayant aucune connaissance de l'infrastructure, pour réaliser un audit de sécurité afin de valider la robustesse des services.
 
 La mise en place de cette infrastructure m’a permis de développer considérablement mes compétences en administration système et réseau, déjà mobilisées lors de notre dernière SAÉ : la *SAÉ 5.01 — Concevoir, réaliser et présenter une solution technique*.
 

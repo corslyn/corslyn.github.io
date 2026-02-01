@@ -4,7 +4,7 @@
     <title>root@portfolio</title>
     <link>http://localhost:1313/</link>
     <description>Recent content on root@portfolio</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
     <lastBuildDate>Wed, 21 Jan 2026 08:13:56 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
