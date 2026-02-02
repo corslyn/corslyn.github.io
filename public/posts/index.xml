@@ -4,7 +4,7 @@
     <title>Posts on root@portfolio</title>
     <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on root@portfolio</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Wed, 21 Jan 2026 08:13:56 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
